@@ -327,9 +327,9 @@ Books are still the best way to go deep on a topic. Stock up on DevOps, Kubernet
 
 <a id="certifications"></a>
 
-## 📜 Kubernetes Certifications (Deal Starts from December)
+## 📜 Certifications
 
-Prove your skills with a certification. The Linux Foundation is running its biggest sale of the year, and bundles save the most.
+Prove your skills with a certification. The Linux Foundation runs its biggest sale of the year now, and bundles save the most.
 
 <table>
   <tr>
