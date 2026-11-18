@@ -68,10 +68,16 @@ def favicon(domain: str, size: int) -> str:
     return f"https://www.google.com/s2/favicons?domain={domain}&sz={size}"
 
 
+def copy_code(code: str) -> str:
+    """A fenced code block. On GitHub it gets a copy button, so readers can
+    copy the coupon in one click. Needs blank lines around it inside HTML."""
+    return f"\n\n```\n{code}\n```\n\n"
+
+
 def button(deal: dict) -> str:
-    """Coupon deals show the code as copyable text, other deals a link button."""
+    """Coupon deals show a copyable code, other deals a link button."""
     if deal.get("code"):
-        return f"🎟️&nbsp;<code><b>{deal['code']}</b></code>"
+        return copy_code(deal["code"])
     if deal["status"] == "live":
         img, alt = shield("Get Deal", None, "f97316"), "Get Deal"
     else:
@@ -84,7 +90,7 @@ def logo(deal: dict, size: int) -> str:
     alt = f'{deal["name"]} logo'
     if deal.get("logos"):
         return "&nbsp;".join(f'<img src="{p}" height="{size}" alt="{alt}">' for p in deal["logos"])
-    return f'<img src="{favicon(deal["domain"], 64)}" width="{size}" height="{size}" alt="{alt}">'
+    return f'<img src="{favicon(deal["domain"], 128)}" width="{size}" height="{size}" alt="{alt}">'
 
 
 def offer_text(deal: dict) -> str:
@@ -217,12 +223,11 @@ def link_name(d: dict) -> str:
 
 
 def card_button(d: dict) -> str:
-    """Same-size button for every top pick: the coupon code or Get Deal."""
+    """Top pick action: copyable coupon code, or a Get Deal button."""
     if d.get("code"):
-        img, alt = shield("Code", d["code"], "f97316", "111827"), f"Coupon code {d['code']}"
-    else:
-        img, alt = shield("Get Deal", None, "f97316"), "Get Deal"
-    return f'<a href="{d["url"]}"><img src="{img}" alt="{alt}" height="28"></a>'
+        return copy_code(d["code"])
+    img = shield("Get Deal", None, "f97316")
+    return f'<a href="{d["url"]}"><img src="{img}" alt="Get Deal" height="28"></a>'
 
 
 def render_top_picks(data: dict) -> str:
@@ -249,21 +254,34 @@ def render_top_picks(data: dict) -> str:
 
 
 def render_row(d: dict) -> str:
-    if d.get("logos"):
-        platform = f"{logo(d, 32)}<br>{link_name(d)}"
-    else:
-        platform = f"{logo(d, 16)}&nbsp;{link_name(d)}"
+    size = 28 if d.get("logos") else 32
     offer = offer_text(d)
     if d.get("valid"):
         offer += f"<br><sub>⌛ {d['valid']}</sub>"
-    return f"| {platform} | {d['description']} | {offer} | {button(d)} | {STATUS[d['status']]} |"
+    return (
+        "  <tr>\n"
+        f'    <td align="center">{logo(d, size)}<br>{link_name(d)}</td>\n'
+        f"    <td>{d['description']}</td>\n"
+        f'    <td align="center">{offer}</td>\n'
+        f'    <td align="center">{button(d)}</td>\n'
+        f'    <td align="center">{STATUS[d["status"]]}</td>\n'
+        "  </tr>"
+    )
 
 
 def render_table(deals: list[dict]) -> list[str]:
+    """HTML table, so coupon cells can hold a copyable code block."""
     return [
-        "| Platform | Description | Deal | Coupon / Link | Status |",
-        "|:--|:--|:--|:-:|:-:|",
+        "<table>",
+        "  <tr>",
+        '    <th width="22%">Platform</th>',
+        '    <th width="36%">Description</th>',
+        '    <th width="16%">Deal</th>',
+        '    <th width="16%">Coupon / Link</th>',
+        '    <th width="10%">Status</th>',
+        "  </tr>",
         *(render_row(d) for d in deals),
+        "</table>",
         "",
     ]
 

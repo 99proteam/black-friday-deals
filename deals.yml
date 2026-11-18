@@ -158,46 +158,14 @@ categories:
     groups:
       - title: Kubernetes Certifications
         emoji: "☸️"
-        intro: Single exams from the CNCF Kubernetes track, from entry level to expert.
+        intro: Every single exam in the CNCF Kubernetes track, from entry level to expert.
         deals:
-          - name: CKA
+          - name: CKA, CKAD, CKS, KCNA & KCSA
             domain: cncf.io
-            logos: [.github/assets/certs/cka.svg]
+            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png, .github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
             url: https://tidd.ly/3Uc4okA
-            description: Certified Kubernetes Administrator. Set up, run and troubleshoot clusters
-            offer: 40% off
-            code: 40KUBE26CT
-            status: live
-          - name: CKAD
-            domain: cncf.io
-            logos: [.github/assets/certs/ckad.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: Certified Kubernetes Application Developer. Build and deploy apps on Kubernetes
-            offer: 40% off
-            code: 40KUBE26CT
-            status: live
-          - name: CKS
-            domain: cncf.io
-            logos: [.github/assets/certs/cks.png]
-            url: https://tidd.ly/3Uc4okA
-            description: Certified Kubernetes Security Specialist. Secure clusters and workloads (needs CKA)
-            offer: 40% off
-            code: 40KUBE26CT
-            status: live
-          - name: KCNA
-            domain: cncf.io
-            logos: [.github/assets/certs/kcna.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: Kubernetes and Cloud Native Associate. The entry-level cloud-native exam
-            offer: 40% off
-            code: 40KUBE26CT
-            status: live
-          - name: KCSA
-            domain: cncf.io
-            logos: [.github/assets/certs/kcsa.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: Kubernetes and Cloud Native Security Associate. Entry-level security exam
-            offer: 40% off
+            description: Administrator, Application Developer, Security Specialist, Cloud Native Associate and Security Associate exams
+            offer: 40% off every exam
             code: 40KUBE26CT
             status: live
 
@@ -205,51 +173,27 @@ categories:
         emoji: "📦"
         intro: Planning more than one exam? Bundles already cost less, and the coupon works on top for up to 47% off.
         deals:
-          - name: CKA + CKAD
-            domain: cncf.io
-            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: Admin and developer. The most popular Kubernetes pair
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: CKA + CKS
-            domain: cncf.io
-            logos: [.github/assets/certs/cka.svg, .github/assets/certs/cks.png]
-            url: https://tidd.ly/3Uc4okA
-            description: Admin and security specialist
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: CKA + CKAD + CKS
+          - name: Professional Bundles
             domain: cncf.io
             logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
-            description: All three professional Kubernetes exams
+            description: CKA + CKAD, CKA + CKS, or all three together (CKA + CKAD + CKS)
             offer: Up to 47% off
             code: 40KUBE26CT
             status: live
-          - name: KCNA + CKA
+          - name: Associate + Professional Bundles
             domain: cncf.io
-            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/cka.svg]
+            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/cka.svg, .github/assets/certs/kcsa.svg, .github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
-            description: Start with the associate exam, then go for the admin cert
+            description: KCNA + CKA or KCSA + CKS. Start with the associate exam, then go pro
             offer: Up to 47% off
             code: 40KUBE26CT
             status: live
-          - name: KCSA + CKS
-            domain: cncf.io
-            logos: [.github/assets/certs/kcsa.svg, .github/assets/certs/cks.png]
-            url: https://tidd.ly/3Uc4okA
-            description: Security associate plus security specialist
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: KCNA + KCSA
+          - name: Associate Bundle
             domain: cncf.io
             logos: [.github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
             url: https://tidd.ly/3Uc4okA
-            description: Both associate-level exams
+            description: KCNA + KCSA. Both associate-level exams together
             offer: Up to 47% off
             code: 40KUBE26CT
             status: live
@@ -276,9 +220,9 @@ categories:
             valid: Ends Nov 20
             status: live
 
-      - title: Linux & Other Certifications
+      - title: Linux, Cloud & Other Certifications
         emoji: "🐧"
-        intro: Every other Linux Foundation exam and course, plus short skill certs.
+        intro: Every other Linux Foundation and cloud-native exam and course, plus short skill certs.
         deals:
           - name: Linux Foundation Certifications
             domain: linuxfoundation.org
