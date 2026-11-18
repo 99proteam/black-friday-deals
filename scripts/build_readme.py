@@ -254,7 +254,12 @@ def render_top_picks(data: dict) -> str:
             f"    </td>"
             for d in chunk
         ]
-        actions = [f'    <td align="center" width="{width}">{card_button(d)}</td>' for d in chunk]
+        # Spacer lines above and below keep each button centred in its cell.
+        actions = [
+            f'    <td align="center" valign="middle" width="{width}">'
+            f"<sub>&nbsp;</sub><br>{card_button(d)}<br><sub>&nbsp;</sub></td>"
+            for d in chunk
+        ]
         rows.append("  <tr>\n" + "\n".join(info) + "\n  </tr>")
         rows.append("  <tr>\n" + "\n".join(actions) + "\n  </tr>")
     return "<table>\n" + "\n".join(rows) + "\n</table>"

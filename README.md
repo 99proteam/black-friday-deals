@@ -56,10 +56,10 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
     </td>
   </tr>
   <tr>
-    <td align="center" width="25%"><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://tidd.ly/3YXTyO3?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://devopscube.com/recommends/udacity-plans/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://bytebytego.com/?fpr=devopscube&ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://tidd.ly/3YXTyO3?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://devopscube.com/recommends/udacity-plans/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://bytebytego.com/?fpr=devopscube&ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a><br><sub>&nbsp;</sub></td>
   </tr>
   <tr>
     <td align="center" valign="top" width="25%">
@@ -92,10 +92,10 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
     </td>
   </tr>
   <tr>
-    <td align="center" width="25%"><a href="https://devopscube.com/recommends/pluralsight-free-trial/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://devopscube.com/recommends/educative/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-CYBER50-f97316?style=for-the-badge&labelColor=111827" alt="CYBER50" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://devopscube.com/recommends/cloudways/"><img src="https://img.shields.io/badge/Code-BFCM802-f97316?style=for-the-badge&labelColor=111827" alt="BFCM802" height="28"></a></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://devopscube.com/recommends/pluralsight-free-trial/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://devopscube.com/recommends/educative/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-CYBER50-f97316?style=for-the-badge&labelColor=111827" alt="CYBER50" height="28"></a><br><sub>&nbsp;</sub></td>
+    <td align="center" valign="middle" width="25%"><sub>&nbsp;</sub><br><a href="https://devopscube.com/recommends/cloudways/"><img src="https://img.shields.io/badge/Code-BFCM802-f97316?style=for-the-badge&labelColor=111827" alt="BFCM802" height="28"></a><br><sub>&nbsp;</sub></td>
   </tr>
 </table>
 <!-- TOP-PICKS:END -->
