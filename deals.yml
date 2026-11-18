@@ -43,7 +43,7 @@ categories:
         domain: udacity.com
         url: https://devopscube.com/recommends/udacity-plans/
         description: Nanodegree programs in cloud, AI and data engineering
-        offer: Up to 55% off (personalized)
+        offer: Up to 55% off
         status: live
         hot: true
       - name: ByteByteGo
@@ -105,6 +105,18 @@ categories:
         description: System design practice with AI feedback on 120+ problems
         offer: Not announced yet
         status: soon
+      - name: Design Gurus
+        domain: designgurus.io
+        url: https://www.designgurus.io/
+        description: System design and coding interview courses from ex-FAANG hiring managers
+        offer: Not announced yet
+        status: soon
+      - name: AlgoMonster
+        domain: algo.monster
+        url: https://algo.monster/
+        description: Coding interview patterns with a structured, AI-assisted curriculum
+        offer: Not announced yet
+        status: soon
       - name: Skillshare
         domain: skillshare.com
         url: https://skillshare.eqcm.net/RKv32
@@ -142,9 +154,8 @@ categories:
     emoji: "📜"
     title: Certifications
     intro: >-
-      A certification is one of the fastest ways to prove your skills to employers, and the
-      Linux Foundation runs its biggest discounts of the year around Black Friday. Use the
-      coupon code at checkout. If you plan to take more than one exam, a bundle saves the most.
+      Prove your skills with a certification. The Linux Foundation runs its biggest sale of
+      the year now, and bundles save the most.
     guide:
       text: Full Linux Foundation coupon guide
       url: https://devopscube.com/linux-foundation-coupon/
@@ -155,6 +166,7 @@ categories:
         deals:
           - name: CKA
             domain: cncf.io
+            logos: [.github/assets/certs/cka.svg]
             url: https://tidd.ly/3Uc4okA
             description: Certified Kubernetes Administrator. Set up, run and troubleshoot clusters
             offer: 40% off
@@ -162,6 +174,7 @@ categories:
             status: live
           - name: CKAD
             domain: cncf.io
+            logos: [.github/assets/certs/ckad.svg]
             url: https://tidd.ly/3Uc4okA
             description: Certified Kubernetes Application Developer. Build and deploy apps on Kubernetes
             offer: 40% off
@@ -169,6 +182,7 @@ categories:
             status: live
           - name: CKS
             domain: cncf.io
+            logos: [.github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
             description: Certified Kubernetes Security Specialist. Secure clusters and workloads (needs CKA)
             offer: 40% off
@@ -176,6 +190,7 @@ categories:
             status: live
           - name: KCNA
             domain: cncf.io
+            logos: [.github/assets/certs/kcna.svg]
             url: https://tidd.ly/3Uc4okA
             description: Kubernetes and Cloud Native Associate. The entry-level cloud-native exam
             offer: 40% off
@@ -183,6 +198,7 @@ categories:
             status: live
           - name: KCSA
             domain: cncf.io
+            logos: [.github/assets/certs/kcsa.svg]
             url: https://tidd.ly/3Uc4okA
             description: Kubernetes and Cloud Native Security Associate. Entry-level security exam
             offer: 40% off
@@ -195,6 +211,7 @@ categories:
         deals:
           - name: CKA + CKAD
             domain: cncf.io
+            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg]
             url: https://tidd.ly/3Uc4okA
             description: Admin and developer. The most popular Kubernetes pair
             offer: Up to 47% off
@@ -202,6 +219,7 @@ categories:
             status: live
           - name: CKA + CKS
             domain: cncf.io
+            logos: [.github/assets/certs/cka.svg, .github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
             description: Admin and security specialist
             offer: Up to 47% off
@@ -209,6 +227,7 @@ categories:
             status: live
           - name: CKA + CKAD + CKS
             domain: cncf.io
+            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
             description: All three professional Kubernetes exams
             offer: Up to 47% off
@@ -216,6 +235,7 @@ categories:
             status: live
           - name: KCNA + CKA
             domain: cncf.io
+            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/cka.svg]
             url: https://tidd.ly/3Uc4okA
             description: Start with the associate exam, then go for the admin cert
             offer: Up to 47% off
@@ -223,6 +243,7 @@ categories:
             status: live
           - name: KCSA + CKS
             domain: cncf.io
+            logos: [.github/assets/certs/kcsa.svg, .github/assets/certs/cks.png]
             url: https://tidd.ly/3Uc4okA
             description: Security associate plus security specialist
             offer: Up to 47% off
@@ -230,6 +251,7 @@ categories:
             status: live
           - name: KCNA + KCSA
             domain: cncf.io
+            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
             url: https://tidd.ly/3Uc4okA
             description: Both associate-level exams
             offer: Up to 47% off
@@ -242,6 +264,7 @@ categories:
         deals:
           - name: Kubestronaut Bundle
             domain: cncf.io
+            logos: [.github/assets/certs/kubestronaut.svg]
             url: https://tidd.ly/3Uc4okA
             description: CKA, CKAD, CKS, KCNA and KCSA. All 5 exams for the Kubestronaut title
             offer: Up to 47% off
@@ -249,6 +272,7 @@ categories:
             status: live
           - name: Golden Kubestronaut Bundle
             domain: cncf.io
+            logos: [.github/assets/certs/golden-kubestronaut.svg]
             url: https://tidd.ly/3Uc4okA
             description: All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS
             offer: About 48% off (bundle price + code)

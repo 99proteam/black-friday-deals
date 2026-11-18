@@ -55,12 +55,13 @@ def fmt_date(value) -> str:
     return f"{d:%b} {d.day}, {d.year}"
 
 
-def shield(label: str, message: str | None, color: str) -> str:
+def shield(label: str, message: str | None, color: str, label_color: str | None = None) -> str:
     def esc(s: str) -> str:
         return quote(s.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="_")
 
     path = f"{esc(label)}-{esc(message)}-{color}" if message else f"{esc(label)}-{color}"
-    return f"https://img.shields.io/badge/{path}?style=for-the-badge"
+    extra = f"&labelColor={label_color}" if label_color else ""
+    return f"https://img.shields.io/badge/{path}?style=for-the-badge{extra}"
 
 
 def favicon(domain: str, size: int) -> str:
@@ -68,11 +69,31 @@ def favicon(domain: str, size: int) -> str:
 
 
 def button(deal: dict) -> str:
+    """Coupon deals show the code as copyable text, other deals a link button."""
+    if deal.get("code"):
+        return f"🎟️&nbsp;<code><b>{deal['code']}</b></code>"
     if deal["status"] == "live":
-        label, color = "Get Deal", "f97316"
+        img, alt = shield("Get Deal", None, "f97316"), "Get Deal"
     else:
-        label, color = "Visit Site", "64748b"
-    return f'<a href="{deal["url"]}"><img src="{shield(label, None, color)}" alt="{label}" height="26"></a>'
+        img, alt = shield("Visit Site", None, "64748b"), "Visit Site"
+    return f'<a href="{deal["url"]}"><img src="{img}" alt="{alt}" height="26"></a>'
+
+
+def logo(deal: dict, size: int) -> str:
+    """Certification logos when set, otherwise the site's favicon."""
+    if deal.get("logos"):
+        return "&nbsp;".join(f'<img src="{p}" height="{size}" alt="">' for p in deal["logos"])
+    return f'<img src="{favicon(deal["domain"], 64)}" width="{size}" height="{size}" alt="">'
+
+
+def offer_text(deal: dict) -> str:
+    if deal["status"] == "soon":
+        return f"👀&nbsp;<i>{deal['offer']}</i>"
+    text = deal["offer"]
+    if len(text) <= 18:  # keep short offers like "40% off" on one line
+        text = text.replace(" ", "&nbsp;")
+    text = f"<b>{text}</b>"
+    return f"🔥&nbsp;{text}" if deal.get("hot") else text
 
 
 # ---------------------------------------------------------------- validation
@@ -97,6 +118,9 @@ def validate(data: dict) -> list[str]:
                 errors.append(f"{label}: url must start with https://")
             if "|" in str(deal.get("description", "")) + str(deal.get("offer", "")):
                 errors.append(f"{label}: '|' is not allowed (it breaks the table)")
+            for path in deal.get("logos", []):
+                if not (ROOT / path).is_file():
+                    errors.append(f"{label}: logo file not found: {path}")
             if deal.get("name") in names:
                 errors.append(f"{label}: duplicate deal name")
             names.add(deal.get("name"))
@@ -123,13 +147,24 @@ def render_stats(data: dict) -> str:
 
 
 def render_nav(data: dict) -> str:
-    chips = []
-    for cat in data["categories"]:
-        title = cat["title"].replace(" ", "&nbsp;")
-        chips.append(
-            f'<a href="#{cat["id"]}">{cat["emoji"]}&nbsp;{title}</a>&nbsp;<code>{len(deals_of(cat))}</code>'
+    """Category boxes: one card per category with its deal count."""
+    cats = data["categories"]
+    width = f"{100 // len(cats)}%"
+    cells = []
+    for cat in cats:
+        count = len(deals_of(cat))
+        cells.append(
+            f'    <td align="center" width="{width}">\n'
+            f'      <a href="#{cat["id"]}">{cat["emoji"]}<br><b>{cat["title"]}</b></a><br>\n'
+            f"      <sub>{count} deals</sub>\n"
+            f"    </td>"
         )
-    return '<p align="center">\n  ' + " &nbsp;·&nbsp;\n  ".join(chips) + "\n</p>"
+    return "<table>\n  <tr>\n" + "\n".join(cells) + "\n  </tr>\n</table>"
+
+
+def link_name(d: dict) -> str:
+    """Underlined, bold product name linking to the deal."""
+    return f'<a href="{d["url"]}"><ins><b>{d["name"]}</b></ins></a>'
 
 
 def render_top_picks(data: dict) -> str:
@@ -140,13 +175,12 @@ def render_top_picks(data: dict) -> str:
     for i in range(0, len(picks), PICKS_PER_ROW):
         cells = []
         for d in picks[i : i + PICKS_PER_ROW]:
-            code = f"<code>{d['code']}</code>" if d.get("code") else "<sub>No code needed</sub>"
             cells.append(
                 f'    <td align="center" width="{width}">\n'
-                f'      <a href="{d["url"]}"><img src="{favicon(d["domain"], 64)}" width="40" height="40" alt=""></a><br>\n'
-                f'      <a href="{d["url"]}"><b>{d["name"]}</b></a><br>\n'
-                f'      <sub>{d["offer"]}</sub><br>\n'
-                f"      {code}\n"
+                f'      <a href="{d["url"]}">{logo(d, 40)}</a><br>\n'
+                f"      {link_name(d)}<br>\n"
+                f"      {offer_text(d)}<br><br>\n"
+                f"      {button(d)}\n"
                 f"    </td>"
             )
         rows.append("  <tr>\n" + "\n".join(cells) + "\n  </tr>")
@@ -154,20 +188,14 @@ def render_top_picks(data: dict) -> str:
 
 
 def render_row(d: dict) -> str:
-    platform = (
-        f'<img src="{favicon(d["domain"], 32)}" width="16" height="16" alt="">&nbsp;'
-        f'**[{d["name"]}]({d["url"]})**'
-    )
-    text = d["offer"]
-    if len(text) <= 18:  # keep short offers like "40% off" on one line
-        text = text.replace(" ", "&nbsp;")
-    offer = f"<i>{text}</i>" if d["status"] == "soon" else f"**{text}**"
-    if d.get("hot"):
-        offer = f"🔥&nbsp;{offer}"
+    if d.get("logos"):
+        platform = f"{logo(d, 32)}<br>{link_name(d)}"
+    else:
+        platform = f"{logo(d, 16)}&nbsp;{link_name(d)}"
+    offer = offer_text(d)
     if d.get("valid"):
         offer += f"<br><sub>⌛ {d['valid']}</sub>"
-    get_it = f"`{d['code']}`<br>{button(d)}" if d.get("code") else button(d)
-    return f"| {platform} | {d['description']} | {offer} | {get_it} | {STATUS[d['status']]} |"
+    return f"| {platform} | {d['description']} | {offer} | {button(d)} | {STATUS[d['status']]} |"
 
 
 def render_table(deals: list[dict]) -> list[str]:
