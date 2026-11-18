@@ -327,9 +327,11 @@ Books are still the best way to go deep on a topic. Stock up on DevOps, Kubernet
 
 <a id="certifications"></a>
 
-## 📜 Certifications
+## 📜 Kubernetes Certifications (Not Live Yet)
 
-Prove your skills with a certification. The Linux Foundation runs its biggest sale of the year now, and bundles save the most.
+>Note: The Cyber Monday deal starts in the first week of December. However, if you want to register now, you can make use of the current 40% discount
+
+Prove your skills with a certification. The Linux Foundation is runs its biggest sale of the year during Cyber Monday (December first week)
 
 <table>
   <tr>
@@ -344,63 +346,63 @@ Prove your skills with a certification. The Linux Foundation runs its biggest sa
     <td>CKA, CKAD, CKS, KCNA and KCSA. Every single exam in the CNCF Kubernetes track</td>
     <td align="center"><b>40%&nbsp;off&nbsp;every&nbsp;exam</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src=".github/assets/certs/cka.svg" height="28" alt="Professional Bundles logo">&nbsp;<img src=".github/assets/certs/ckad.svg" height="28" alt="Professional Bundles logo">&nbsp;<img src=".github/assets/certs/cks.png" height="28" alt="Professional Bundles logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Professional Bundles</b></ins></a></td>
     <td>CKA + CKAD, CKA + CKS, or all three together (CKA + CKAD + CKS)</td>
     <td align="center"><b>Up&nbsp;to&nbsp;47%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src=".github/assets/certs/kcna.svg" height="28" alt="Associate + Professional Bundles logo">&nbsp;<img src=".github/assets/certs/cka.svg" height="28" alt="Associate + Professional Bundles logo">&nbsp;<img src=".github/assets/certs/kcsa.svg" height="28" alt="Associate + Professional Bundles logo">&nbsp;<img src=".github/assets/certs/cks.png" height="28" alt="Associate + Professional Bundles logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Associate + Professional Bundles</b></ins></a></td>
     <td>KCNA + CKA or KCSA + CKS. Start with the associate exam, then go pro</td>
     <td align="center"><b>Up&nbsp;to&nbsp;47%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src=".github/assets/certs/kcna.svg" height="28" alt="Associate Bundle logo">&nbsp;<img src=".github/assets/certs/kcsa.svg" height="28" alt="Associate Bundle logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Associate Bundle</b></ins></a></td>
     <td>KCNA + KCSA. Both associate-level exams together</td>
     <td align="center"><b>Up&nbsp;to&nbsp;47%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src=".github/assets/certs/kubestronaut.svg" height="28" alt="Kubestronaut Bundle logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Kubestronaut Bundle</b></ins></a></td>
     <td>CKA, CKAD, CKS, KCNA and KCSA. All 5 exams for the Kubestronaut title</td>
     <td align="center"><b>Up&nbsp;to&nbsp;47%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soone</td>
   </tr>
   <tr>
     <td align="center"><img src=".github/assets/certs/golden-kubestronaut.svg" height="28" alt="Golden Kubestronaut Bundle logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Golden Kubestronaut Bundle</b></ins></a></td>
     <td>All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS</td>
     <td align="center"><b>40% off bundle price</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=linuxfoundation.org&sz=128" width="32" height="32" alt="Linux Foundation Certifications logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Linux Foundation Certifications</b></ins></a></td>
     <td>LFCS, PCA, ICA, CAPA and every other LF cert, plus courses</td>
     <td align="center"><b>40%&nbsp;off&nbsp;sitewide</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soone</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=linuxfoundation.org&sz=128" width="32" height="32" alt="Linux Foundation SkillCreds logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Linux Foundation SkillCreds</b></ins></a></td>
     <td>Short skill certs for Git, Bash, Helm, YAML and Vim</td>
     <td align="center"><b>40%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=finops.org&sz=128" width="32" height="32" alt="FinOps Certifications logo"><br><a href="https://learn.finops.org/path/finops-certified-practitioner-self-paced"><ins><b>FinOps Certifications</b></ins></a></td>
     <td>FinOps Certified Practitioner, Engineer, FOCUS Analyst and FinOps for AI</td>
     <td align="center"><b>20%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://learn.finops.org/path/finops-certified-practitioner-self-paced"><img src="https://img.shields.io/badge/Code-COMTECHIES__20-f97316?style=for-the-badge&labelColor=111827" alt="COMTECHIES_20" height="26"></a></td>
-    <td align="center">🟢&nbsp;Live</td>
+    <td align="center">⏳&nbsp;Soon</td>
   </tr>
 </table>
 
