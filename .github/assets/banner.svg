@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="t d">
+  <title id="t">Black Friday and Cyber Monday 2026 Deals for Engineers</title>
+  <desc id="d">Hand-picked Black Friday and Cyber Monday deals for DevOps, SRE, Platform, MLOps and software engineers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#151a3a"/>
+      <stop offset="1" stop-color="#2a1245"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="0.5" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#ec4899" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.12" cy="0.95" r="0.4">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="24" fill="url(#dots)"/>
+  <rect width="1280" height="340" rx="24" fill="url(#glow)"/>
+  <rect width="1280" height="340" rx="24" fill="url(#glow2)"/>
+
+  <!-- price tag -->
+  <g transform="translate(905 62) rotate(10)">
+    <path d="M14 0 H236 L292 70 L236 140 H14 Q0 140 0 126 V14 Q0 0 14 0 Z" fill="url(#hot)"/>
+    <circle cx="250" cy="70" r="11" fill="#151a3a"/>
+    <text x="118" y="56" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" fill-opacity="0.92" letter-spacing="2">UP TO</text>
+    <text x="118" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="900" fill="#ffffff">87% OFF</text>
+  </g>
+
+  <!-- big faded percent -->
+  <text x="1170" y="320" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="210" font-weight="900" fill="#ffffff" fill-opacity="0.04">%</text>
+
+  <!-- status pill -->
+  <rect x="72" y="52" width="214" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+  <circle cx="96" cy="71" r="6" fill="#22c55e"/>
+  <text x="112" y="78" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#e2e8f0" letter-spacing="1">DEALS ARE LIVE</text>
+
+  <text x="70" y="168" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="74" font-weight="900" fill="url(#hot)" letter-spacing="1">BLACK FRIDAY</text>
+  <text x="72" y="238" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="900" letter-spacing="1"><tspan fill="#ffffff">&amp; </tspan><tspan fill="url(#cool)">CYBER MONDAY</tspan><tspan fill="#ffffff"> DEALS</tspan></text>
+
+  <text x="72" y="292" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#cbd5e1">Hand-picked deals for engineers who build, ship and run software</text>
+</svg>
