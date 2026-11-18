@@ -269,7 +269,7 @@ categories:
         status: live
       - name: Scala Hosting
         domain: scalahosting.com
-        url: https://www.scalahosting.com/?ref=devopscube.com#jorgearagao
+        url: https://www.scalahosting.com/?ref=devopscube.com
         description: Managed VPS hosting with the SPanel control panel
         offer: Up to 78% off
         status: live
