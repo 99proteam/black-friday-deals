@@ -246,9 +246,11 @@ def render_top_picks(data: dict) -> str:
         chunk = picks[i : i + PICKS_PER_ROW]
         info = [
             f'    <td align="center" valign="top" width="{width}">\n'
+            f"      <sub>&nbsp;</sub><br>\n"  # breathing space above the logo
             f'      <a href="{d["url"]}">{logo(d, 44)}</a><br>\n'
             f"      {link_name(d)}<br>\n"
-            f"      {offer_text(d)}\n"
+            f"      {offer_text(d)}<br>\n"
+            f"      <sub>&nbsp;</sub>\n"  # and below the offer
             f"    </td>"
             for d in chunk
         ]
@@ -304,7 +306,7 @@ def render_deals(data: dict) -> str:
                 out.append(f"> {group['intro']}\n")
             out.extend(render_table(group["deals"]))
         if cat.get("guide"):
-            out.append(f"📖 **[{cat['guide']['text']}]({cat['guide']['url']})**: every code, bundle and saving explained.\n")
+            out.append(f"📖 **[{cat['guide']['text']}]({cat['guide']['url']})**: free study guide, hands-on labs and the latest CKA coupon.\n")
         out.append('<p align="right"><a href="#categories">⬆ Back to categories</a></p>\n')
     return "\n".join(out).rstrip() + "\n"
 

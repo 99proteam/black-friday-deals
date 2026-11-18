@@ -10,7 +10,7 @@ web hosting and creator tools, checked and updated through Cyber Monday.</p>
 
 <!-- STATS:START -->
 
-[![deals live](https://img.shields.io/badge/deals_live-29_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
+[![deals live](https://img.shields.io/badge/deals_live-29_of_40-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
 <!-- STATS:END -->
 
 </div>
@@ -27,24 +27,32 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
 <table>
   <tr>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://tidd.ly/3Uc4okA"><img src="https://www.google.com/s2/favicons?domain=linuxfoundation.org&sz=128" width="44" height="44" alt="Linux Foundation Certifications logo"></a><br>
       <a href="https://tidd.ly/3Uc4okA"><ins><b>Linux Foundation Certifications</b></ins></a><br>
-      <b>40%&nbsp;off&nbsp;sitewide</b>
+      <b>40%&nbsp;off&nbsp;sitewide</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://tidd.ly/3YXTyO3?ref=devopscube.com"><img src="https://www.google.com/s2/favicons?domain=kodekloud.com&sz=128" width="44" height="44" alt="KodeKloud logo"></a><br>
       <a href="https://tidd.ly/3YXTyO3?ref=devopscube.com"><ins><b>KodeKloud</b></ins></a><br>
-      <b>50%&nbsp;off</b>
+      <b>50%&nbsp;off</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/udacity-plans/"><img src="https://www.google.com/s2/favicons?domain=udacity.com&sz=128" width="44" height="44" alt="Udacity logo"></a><br>
       <a href="https://devopscube.com/recommends/udacity-plans/"><ins><b>Udacity</b></ins></a><br>
-      <b>Up&nbsp;to&nbsp;55%&nbsp;off</b>
+      <b>Up&nbsp;to&nbsp;55%&nbsp;off</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://bytebytego.com/?fpr=devopscube&ref=devopscube.com"><img src="https://www.google.com/s2/favicons?domain=bytebytego.com&sz=128" width="44" height="44" alt="ByteByteGo logo"></a><br>
       <a href="https://bytebytego.com/?fpr=devopscube&ref=devopscube.com"><ins><b>ByteByteGo</b></ins></a><br>
-      <b>50% off annual plans</b>
+      <b>50% off annual plans</b><br>
+      <sub>&nbsp;</sub>
     </td>
   </tr>
   <tr>
@@ -55,24 +63,32 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
   </tr>
   <tr>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/pluralsight-free-trial/"><img src="https://www.google.com/s2/favicons?domain=pluralsight.com&sz=128" width="44" height="44" alt="Pluralsight & A Cloud Guru logo"></a><br>
       <a href="https://devopscube.com/recommends/pluralsight-free-trial/"><ins><b>Pluralsight & A Cloud Guru</b></ins></a><br>
-      <b>60% off annual plans</b>
+      <b>60% off annual plans</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/educative/"><img src="https://www.google.com/s2/favicons?domain=educative.io&sz=128" width="44" height="44" alt="Educative logo"></a><br>
       <a href="https://devopscube.com/recommends/educative/"><ins><b>Educative</b></ins></a><br>
-      <b>55% off Unlimited plans</b>
+      <b>55% off Unlimited plans</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://www.google.com/s2/favicons?domain=devopscube.com&sz=128" width="44" height="44" alt="DevOpsCube Courses logo"></a><br>
       <a href="https://courses.devopscube.com/?ref=devopscube.com"><ins><b>DevOpsCube Courses</b></ins></a><br>
-      <b>Up&nbsp;to&nbsp;40%&nbsp;off</b>
+      <b>Up&nbsp;to&nbsp;40%&nbsp;off</b><br>
+      <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
+      <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/cloudways/"><img src="https://www.google.com/s2/favicons?domain=cloudways.com&sz=128" width="44" height="44" alt="Cloudways logo"></a><br>
       <a href="https://devopscube.com/recommends/cloudways/"><ins><b>Cloudways</b></ins></a><br>
-      <b>80%&nbsp;off</b>
+      <b>80%&nbsp;off</b><br>
+      <sub>&nbsp;</sub>
     </td>
   </tr>
   <tr>
@@ -132,7 +148,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
   <tr>
     <td align="center" width="20%">
       <a href="#learning-platforms">🎓<br><b>Learning Platforms</b></a><br>
-      <sub>14 deals</sub>
+      <sub>13 deals</sub>
     </td>
     <td align="center" width="20%">
       <a href="#books-reading">📚<br><b>Books & Reading</b></a><br>
@@ -266,13 +282,6 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
     <td align="center" nowrap><a href="https://devopscube.com/recommends/algomonster"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
     <td align="center">⏳&nbsp;Soon</td>
   </tr>
-  <tr>
-    <td align="center"><img src="https://www.google.com/s2/favicons?domain=skillshare.com&sz=128" width="32" height="32" alt="Skillshare logo"><br><a href="https://skillshare.eqcm.net/RKv32"><ins><b>Skillshare</b></ins></a></td>
-    <td>Classes on design, video and soft skills</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://skillshare.eqcm.net/RKv32"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
-  </tr>
 </table>
 
 <p align="right"><a href="#categories">⬆ Back to categories</a></p>
@@ -388,7 +397,7 @@ Prove your skills with a certification. The Linux Foundation runs its biggest sa
   </tr>
 </table>
 
-📖 **[Full Linux Foundation coupon guide](https://devopscube.com/linux-foundation-coupon/)**: every code, bundle and saving explained.
+📖 **[CKA Certification Guide on GitHub](https://github.com/techiescamp/cka-certification-guide)**: free study guide, hands-on labs and the latest CKA coupon.
 
 <p align="right"><a href="#categories">⬆ Back to categories</a></p>
 
@@ -617,7 +626,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>How often is this Black Friday tracker updated?</b></summary>
 
-We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 29 of 41 deals are live.
+We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 29 of 40 deals are live.
 
 </details>
 <!-- FAQ:END -->
