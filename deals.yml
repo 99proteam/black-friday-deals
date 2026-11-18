@@ -101,13 +101,13 @@ categories:
         status: soon
       - name: Design Gurus
         domain: designgurus.io
-        url: https://www.designgurus.io/
+        url: https://devopscube.com/recommends/designgurus
         description: System design and coding interview courses from ex-FAANG hiring managers
         offer: Not announced yet
         status: soon
       - name: AlgoMonster
         domain: algo.monster
-        url: https://algo.monster/
+        url: https://devopscube.com/recommends/algomonster
         description: Coding interview patterns with a structured, AI-assisted curriculum
         offer: Not announced yet
         status: soon
@@ -304,6 +304,12 @@ categories:
       deepest discounts of the year, but they usually apply to the first term only, so check
       the renewal price before you pick a long plan.
     deals:
+      - name: Bluehost
+        domain: bluehost.com
+        url: https://comtechies.com/recommends/bluehost?ref=devopscube.com
+        description: Shared and WordPress hosting
+        offer: Up to 62% off
+        status: live
       - name: Cloudways
         domain: cloudways.com
         url: https://devopscube.com/recommends/cloudways/
@@ -353,12 +359,6 @@ categories:
         description: Shared and WordPress hosting
         offer: Up to 76% off
         status: live
-      - name: Bluehost
-        domain: bluehost.com
-        url: https://comtechies.com/recommends/bluehost?ref=devopscube.com
-        description: Shared and WordPress hosting
-        offer: Up to 62% off
-        status: live
       - name: Squarespace
         domain: squarespace.com
         url: https://squarespace.syuh.net/9Va5X0
@@ -393,6 +393,12 @@ categories:
         url: https://devopscube.com/recommends/teachable-pricing/
         description: Create and sell online courses
         offer: Up to 30% off
+        status: live
+      - name: Kit (formerly ConvertKit)
+        domain: kit.com
+        url: https://devopscube.com/recommends/kit
+        description: Email newsletters and automations for creators
+        offer: Up to 25% off annual Pro plan
         status: live
       - name: TechSmith (Camtasia & Snagit)
         domain: techsmith.com

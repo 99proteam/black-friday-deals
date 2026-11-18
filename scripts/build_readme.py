@@ -103,42 +103,45 @@ def plain_offer(deal: dict) -> str:
 
 
 def render_faq(data: dict) -> str:
-    """Question-and-answer block built from the deal data.
+    """Question-and-answer toggles built from the deal data.
 
     Short, direct answers in Q&A form are what search engines and AI answer
     engines quote, so every answer here is generated and stays in sync.
+    Content inside <details> is still in the page, so it is still indexed.
     """
     year = data["year"]
     bf, cm = fmt_date(data["black_friday"]), fmt_date(data["cyber_monday"])
     live = [d for d in all_deals(data) if d["status"] == "live"]
-    out = [
-        f"### When is Black Friday {year}?\n",
-        f"Black Friday {year} is on **{bf}** and Cyber Monday {year} is on **{cm}**. "
-        f"Many deals in this tracker are already live before Black Friday and run through Cyber Monday.\n",
-    ]
+    qa: list[tuple[str, list[str]]] = [(
+        f"When is Black Friday {year}?",
+        [f"Black Friday {year} is on **{bf}** and Cyber Monday {year} is on **{cm}**. "
+         f"Many deals in this tracker are already live before Black Friday and run through Cyber Monday."],
+    )]
     for cat in data["categories"]:
         cat_live = [d for d in deals_of(cat) if d["status"] == "live"]
         if not cat_live:
             continue
         topic = cat.get("faq_topic", cat["title"].lower())
-        out.append(f"### What are the best {topic} deals for Black Friday {year}?\n")
-        out.extend(f"- {plain_offer(d)}" for d in cat_live[:5])
+        lines = [f"- {plain_offer(d)}" for d in cat_live[:5]]
         if len(cat_live) > 5:
-            out.append(f"- …and {len(cat_live) - 5} more in [{cat['title']}](#{cat['id']}).")
-        out.append("")
-    coupons = [d for d in live if d.get("code")]
-    if coupons:
-        codes = {}
-        for d in coupons:
+            lines.append(f"- …and {len(cat_live) - 5} more in [{cat['title']}](#{cat['id']}).")
+        qa.append((f"What are the best {topic} deals for Black Friday {year}?", lines))
+    codes: dict[str, str] = {}
+    for d in live:
+        if d.get("code"):
             codes.setdefault(d["code"], d["name"])
-        out.append(f"### Which Black Friday {year} coupon codes work right now?\n")
-        out.extend(f"- `{code}`: {name}" for code, name in codes.items())
-        out.append("")
-    out.append("### How often is this Black Friday tracker updated?\n")
-    out.append(
+    if codes:
+        qa.append((f"Which Black Friday {year} coupon codes work right now?",
+                   [f"- `{code}`: {name}" for code, name in codes.items()]))
+    qa.append(("How often is this Black Friday tracker updated?", [
         f"We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. "
-        f"Last checked: **{fmt_date(data['last_updated'])}**. {len(live)} of {len(all_deals(data))} deals are live.\n"
-    )
+        f"Last checked: **{fmt_date(data['last_updated'])}**. {len(live)} of {len(all_deals(data))} deals are live."
+    ]))
+    out = []
+    for question, answer in qa:
+        out.append(f"<details>\n<summary><b>{question}</b></summary>\n")
+        out.extend(answer)
+        out.append("\n</details>\n")
     return "\n".join(out)
 
 
@@ -193,7 +196,7 @@ def render_stats(data: dict) -> str:
 
 
 def render_nav(data: dict) -> str:
-    """Category boxes: one card per category with its deal count."""
+    """Category boxes: one card per category with its deal count, centred."""
     cats = data["categories"]
     width = f"{100 // len(cats)}%"
     cells = []
@@ -205,7 +208,7 @@ def render_nav(data: dict) -> str:
             f"      <sub>{count} deals</sub>\n"
             f"    </td>"
         )
-    return "<table>\n  <tr>\n" + "\n".join(cells) + "\n  </tr>\n</table>"
+    return '<table align="center">\n  <tr>\n' + "\n".join(cells) + "\n  </tr>\n</table>"
 
 
 def link_name(d: dict) -> str:
@@ -213,23 +216,35 @@ def link_name(d: dict) -> str:
     return f'<a href="{d["url"]}"><ins><b>{d["name"]}</b></ins></a>'
 
 
+def card_button(d: dict) -> str:
+    """Same-size button for every top pick: the coupon code or Get Deal."""
+    if d.get("code"):
+        img, alt = shield("Code", d["code"], "f97316", "111827"), f"Coupon code {d['code']}"
+    else:
+        img, alt = shield("Get Deal", None, "f97316"), "Get Deal"
+    return f'<a href="{d["url"]}"><img src="{img}" alt="{alt}" height="28"></a>'
+
+
 def render_top_picks(data: dict) -> str:
+    """Cards in rows of 4. Each card row is followed by a button row, so all
+    buttons sit on the same line no matter how long the names are."""
     by_name = {d["name"]: d for d in all_deals(data)}
     picks = [by_name[n] for n in data.get("top_picks", [])]
     width = f"{100 // PICKS_PER_ROW}%"
     rows = []
     for i in range(0, len(picks), PICKS_PER_ROW):
-        cells = []
-        for d in picks[i : i + PICKS_PER_ROW]:
-            cells.append(
-                f'    <td align="center" width="{width}">\n'
-                f'      <a href="{d["url"]}">{logo(d, 40)}</a><br>\n'
-                f"      {link_name(d)}<br>\n"
-                f"      {offer_text(d)}<br><br>\n"
-                f"      {button(d)}\n"
-                f"    </td>"
-            )
-        rows.append("  <tr>\n" + "\n".join(cells) + "\n  </tr>")
+        chunk = picks[i : i + PICKS_PER_ROW]
+        info = [
+            f'    <td align="center" valign="top" width="{width}">\n'
+            f'      <a href="{d["url"]}">{logo(d, 44)}</a><br>\n'
+            f"      {link_name(d)}<br>\n"
+            f"      {offer_text(d)}\n"
+            f"    </td>"
+            for d in chunk
+        ]
+        actions = [f'    <td align="center" width="{width}">{card_button(d)}</td>' for d in chunk]
+        rows.append("  <tr>\n" + "\n".join(info) + "\n  </tr>")
+        rows.append("  <tr>\n" + "\n".join(actions) + "\n  </tr>")
     return "<table>\n" + "\n".join(rows) + "\n</table>"
 
 
