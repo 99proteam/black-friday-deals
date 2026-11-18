@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="t d">
+  <title id="t">Black Friday 2026 Deals for DevOps Engineers</title>
+  <desc id="d">Curated Black Friday and Cyber Monday deals for DevOps, SRE, Platform and MLOps engineers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#151a3a"/>
+      <stop offset="1" stop-color="#2a1245"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="0.5" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#ec4899" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.12" cy="0.95" r="0.4">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#dots)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#glow)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#glow2)"/>
+
+  <!-- price tag -->
+  <g transform="translate(985 70) rotate(12)">
+    <path d="M0 0 H170 L215 55 L170 110 H0 Z" fill="url(#hot)"/>
+    <circle cx="178" cy="55" r="9" fill="#151a3a"/>
+    <text x="20" y="54" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" fill-opacity="0.9">UP TO</text>
+    <text x="18" y="94" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">87% OFF</text>
+  </g>
+
+  <!-- big faded percent -->
+  <text x="1150" y="335" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="210" font-weight="900" fill="#ffffff" fill-opacity="0.04">%</text>
+
+  <!-- year pill -->
+  <rect x="72" y="62" width="214" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+  <circle cx="96" cy="81" r="6" fill="#22c55e"/>
+  <text x="112" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#e2e8f0" letter-spacing="1">DEALS ARE LIVE</text>
+
+  <text x="70" y="178" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="74" font-weight="900" fill="url(#hot)" letter-spacing="1">BLACK FRIDAY <tspan fill="#ffffff">2026</tspan></text>
+
+  <text x="72" y="226" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#cbd5e1">Hand-picked deals for engineers who ship and run infrastructure</text>
+
+  <!-- role chips -->
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#e2e8f0">
+    <rect x="72"  y="262" width="104" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="124" y="288" text-anchor="middle">DevOps</text>
+    <rect x="188" y="262" width="80" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="228" y="288" text-anchor="middle">SRE</text>
+    <rect x="280" y="262" width="116" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="338" y="288" text-anchor="middle">Platform</text>
+    <rect x="408" y="262" width="100" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="458" y="288" text-anchor="middle">MLOps</text>
+    <rect x="520" y="262" width="96" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="568" y="288" text-anchor="middle">Cloud</text>
+    <rect x="628" y="262" width="150" height="40" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="703" y="288" text-anchor="middle">Kubernetes</text>
+  </g>
+
+  <text x="1208" y="320" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#94a3b8">by DevOpsCube</text>
+</svg>
