@@ -10,7 +10,7 @@ web hosting and creator tools, checked and updated through Cyber Monday.</p>
 
 <!-- STATS:START -->
 
-[![deals live](https://img.shields.io/badge/deals_live-30_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
+[![deals live](https://img.shields.io/badge/deals_live-32_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
 <!-- STATS:END -->
 
 </div>
@@ -73,7 +73,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
       <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/educative/"><img src="https://www.google.com/s2/favicons?domain=educative.io&sz=128" width="44" height="44" alt="Educative logo"></a><br>
       <a href="https://devopscube.com/recommends/educative/"><ins><b>Educative</b></ins></a><br>
-      <b>55% off Unlimited plans</b><br>
+      <b>Up to 72% off Unlimited plans</b><br>
       <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
@@ -87,7 +87,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
       <sub>&nbsp;</sub><br>
       <a href="https://devopscube.com/recommends/cloudways/"><img src="https://www.google.com/s2/favicons?domain=cloudways.com&sz=128" width="44" height="44" alt="Cloudways logo"></a><br>
       <a href="https://devopscube.com/recommends/cloudways/"><ins><b>Cloudways</b></ins></a><br>
-      <b>80%&nbsp;off</b><br>
+      <b>80% off for 2 months</b><br>
       <sub>&nbsp;</sub>
     </td>
   </tr>
@@ -222,7 +222,7 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=educative.io&sz=128" width="32" height="32" alt="Educative logo"><br><a href="https://devopscube.com/recommends/educative/"><ins><b>Educative</b></ins></a></td>
     <td>Interactive text-based courses with in-browser coding</td>
-    <td align="center"><b>55% off Unlimited plans</b></td>
+    <td align="center"><b>Up to 72% off Unlimited plans</b></td>
     <td align="center" nowrap><a href="https://devopscube.com/recommends/educative/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
@@ -271,9 +271,9 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=designgurus.io&sz=128" width="32" height="32" alt="Design Gurus logo"><br><a href="https://devopscube.com/recommends/designgurus"><ins><b>Design Gurus</b></ins></a></td>
     <td>System design and coding interview courses from ex-FAANG hiring managers</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://devopscube.com/recommends/designgurus"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
+    <td align="center"><b>70% off (90% off All Courses bundle)</b></td>
+    <td align="center" nowrap><a href="https://devopscube.com/recommends/designgurus"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=algo.monster&sz=128" width="32" height="32" alt="AlgoMonster logo"><br><a href="https://devopscube.com/recommends/algomonster"><ins><b>AlgoMonster</b></ins></a></td>
@@ -377,8 +377,8 @@ Prove your skills with a certification. The Linux Foundation runs its biggest sa
   <tr>
     <td align="center"><img src=".github/assets/certs/golden-kubestronaut.svg" height="28" alt="Golden Kubestronaut Bundle logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Golden Kubestronaut Bundle</b></ins></a></td>
     <td>All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS</td>
-    <td align="center"><b>About 48% off (bundle price + code)</b><br><sub>⌛ Ends Nov 20</sub></td>
-    <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-DCUBE30-f97316?style=for-the-badge&labelColor=111827" alt="DCUBE30" height="26"></a></td>
+    <td align="center"><b>40% off bundle price</b></td>
+    <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
@@ -391,8 +391,8 @@ Prove your skills with a certification. The Linux Foundation runs its biggest sa
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=linuxfoundation.org&sz=128" width="32" height="32" alt="Linux Foundation SkillCreds logo"><br><a href="https://tidd.ly/3Uc4okA"><ins><b>Linux Foundation SkillCreds</b></ins></a></td>
     <td>Short skill certs for Git, Bash, Helm, YAML and Vim</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;30%&nbsp;off</b></td>
-    <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-SCRIPT30-f97316?style=for-the-badge&labelColor=111827" alt="SCRIPT30" height="26"></a></td>
+    <td align="center"><b>40%&nbsp;off</b></td>
+    <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-40KUBE26CT-f97316?style=for-the-badge&labelColor=111827" alt="40KUBE26CT" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
@@ -425,14 +425,14 @@ Run your tech blog, portfolio, demo app or side project. Hosting has some of the
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=bluehost.com&sz=128" width="32" height="32" alt="Bluehost logo"><br><a href="https://comtechies.com/recommends/bluehost?ref=devopscube.com"><ins><b>Bluehost</b></ins></a></td>
     <td>Shared and WordPress hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;62%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;78%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://comtechies.com/recommends/bluehost?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=cloudways.com&sz=128" width="32" height="32" alt="Cloudways logo"><br><a href="https://devopscube.com/recommends/cloudways/"><ins><b>Cloudways</b></ins></a></td>
     <td>Managed cloud hosting on DigitalOcean, AWS, Google Cloud and more</td>
-    <td align="center"><b>80%&nbsp;off</b></td>
+    <td align="center"><b>80% off for 2 months</b><br><sub>⌛ Ends Dec 4</sub></td>
     <td align="center" nowrap><a href="https://devopscube.com/recommends/cloudways/"><img src="https://img.shields.io/badge/Code-BFCM802-f97316?style=for-the-badge&labelColor=111827" alt="BFCM802" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
@@ -446,21 +446,21 @@ Run your tech blog, portfolio, demo app or side project. Hosting has some of the
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=hosting.com&sz=128" width="32" height="32" alt="Hosting.com (formerly A2 Hosting) logo"><br><a href="https://comtechies.com/recommends/httpswwwa2hostingcomaid67af0c96b259cbid75dbf1c0?ref=devopscube.com"><ins><b>Hosting.com (formerly A2 Hosting)</b></ins></a></td>
     <td>Shared, WordPress and managed hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;87%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;89%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://comtechies.com/recommends/httpswwwa2hostingcomaid67af0c96b259cbid75dbf1c0?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=chemicloud.com&sz=128" width="32" height="32" alt="ChemiCloud logo"><br><a href="https://chemicloud.com/?ref=devopscube.com#68e6451055163"><ins><b>ChemiCloud</b></ins></a></td>
     <td>Managed WordPress and shared hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;84%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;88%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://chemicloud.com/?ref=devopscube.com#68e6451055163"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=dreamhost.com&sz=128" width="32" height="32" alt="DreamHost logo"><br><a href="https://click.dreamhost.com/aff_c?offer_id=8&aff_id=21910"><ins><b>DreamHost</b></ins></a></td>
     <td>Shared, VPS and WordPress hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;83%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;75%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://click.dreamhost.com/aff_c?offer_id=8&aff_id=21910"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
@@ -474,23 +474,23 @@ Run your tech blog, portfolio, demo app or side project. Hosting has some of the
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=inmotionhosting.com&sz=128" width="32" height="32" alt="InMotion Hosting logo"><br><a href="https://comtechies.com/recommends/httpspartnersinmotionhostingcomc56122972600334222?ref=devopscube.com"><ins><b>InMotion Hosting</b></ins></a></td>
     <td>Shared, VPS and dedicated hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;77%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;70%&nbsp;off</b><br><sub>⌛ Ends Dec 1</sub></td>
     <td align="center" nowrap><a href="https://comtechies.com/recommends/httpspartnersinmotionhostingcomc56122972600334222?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=hostgator.com&sz=128" width="32" height="32" alt="HostGator logo"><br><a href="https://comtechies.com/recommends/hostgator?ref=devopscube.com"><ins><b>HostGator</b></ins></a></td>
     <td>Shared and WordPress hosting</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;76%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;84%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://comtechies.com/recommends/hostgator?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=squarespace.com&sz=128" width="32" height="32" alt="Squarespace logo"><br><a href="https://squarespace.syuh.net/9Va5X0"><ins><b>Squarespace</b></ins></a></td>
     <td>All-in-one website builder with hosting included</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://squarespace.syuh.net/9Va5X0"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
+    <td align="center"><b>55% off select plans</b></td>
+    <td align="center" nowrap><a href="https://squarespace.syuh.net/9Va5X0"><img src="https://img.shields.io/badge/Code-BFCM55-f97316?style=for-the-badge&labelColor=111827" alt="BFCM55" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
   </tr>
 </table>
 
@@ -548,7 +548,7 @@ Writing and teaching what you know is one of the best ways to grow as an enginee
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128" width="32" height="32" alt="ElevenLabs logo"><br><a href="https://try.elevenlabs.io/p4fh9dhwbmjw?ref=devopscube.com"><ins><b>ElevenLabs</b></ins></a></td>
     <td>AI voice-over for course videos and demos</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;50%&nbsp;off</b></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;55%&nbsp;off</b></td>
     <td align="center" nowrap><a href="https://try.elevenlabs.io/p4fh9dhwbmjw?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
@@ -578,8 +578,8 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 - **Udacity**: Up to 55% off
 - **ByteByteGo**: 50% off annual plans
 - **Pluralsight & A Cloud Guru**: 60% off annual plans
-- **Educative**: 55% off Unlimited plans
-- …and 2 more in [Learning Platforms](#learning-platforms).
+- **Educative**: Up to 72% off Unlimited plans
+- …and 3 more in [Learning Platforms](#learning-platforms).
 
 </details>
 
@@ -598,12 +598,12 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>What are the best web hosting deals for Black Friday 2026?</b></summary>
 
-- **Bluehost**: Up to 62% off
-- **Cloudways**: 80% off with code `BFCM802`
+- **Bluehost**: Up to 78% off
+- **Cloudways**: 80% off for 2 months with code `BFCM802`
 - **Hostinger**: Up to 83% off
-- **Hosting.com (formerly A2 Hosting)**: Up to 87% off
-- **ChemiCloud**: Up to 84% off
-- …and 4 more in [Hosting Platforms](#hosting-platforms).
+- **Hosting.com (formerly A2 Hosting)**: Up to 89% off
+- **ChemiCloud**: Up to 88% off
+- …and 5 more in [Hosting Platforms](#hosting-platforms).
 
 </details>
 
@@ -614,7 +614,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 - **Ghost**: Up to 20% off annual plans
 - **Teachable**: Up to 30% off
 - **Kit (formerly ConvertKit)**: Up to 25% off annual Pro plan
-- **ElevenLabs**: Up to 50% off
+- **ElevenLabs**: Up to 55% off
 
 </details>
 
@@ -623,10 +623,9 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 
 - `CYBER50`: DevOpsCube Courses
 - `40KUBE26CT`: Kubernetes Certifications
-- `DCUBE30`: Golden Kubestronaut Bundle
-- `SCRIPT30`: Linux Foundation SkillCreds
 - `COMTECHIES_20`: FinOps Certifications
 - `BFCM802`: Cloudways
+- `BFCM55`: Squarespace
 - `DCUBE20OFF`: Beehiiv
 
 </details>
@@ -634,7 +633,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>How often is this Black Friday tracker updated?</b></summary>
 
-We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 30 of 41 deals are live.
+We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 32 of 41 deals are live.
 
 </details>
 <!-- FAQ:END -->
