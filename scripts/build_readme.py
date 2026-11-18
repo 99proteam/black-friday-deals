@@ -68,16 +68,21 @@ def favicon(domain: str, size: int) -> str:
     return f"https://www.google.com/s2/favicons?domain={domain}&sz={size}"
 
 
-def copy_code(code: str) -> str:
-    """A fenced code block. On GitHub it gets a copy button, so readers can
-    copy the coupon in one click. Needs blank lines around it inside HTML."""
-    return f"\n\n```\n{code}\n```\n\n"
+def coupon_button(deal: dict, height: int = 26) -> str:
+    """Coupon code shown inside a button, styled like Get Deal.
+
+    GitHub READMEs can't run JavaScript, so a click can't copy text. The
+    button shows the code and opens the deal page; the alt text holds the
+    code too, so it can be selected and copied in most browsers.
+    """
+    img = shield("Code", deal["code"], "f97316", "111827")
+    return f'<a href="{deal["url"]}"><img src="{img}" alt="{deal["code"]}" height="{height}"></a>'
 
 
 def button(deal: dict) -> str:
-    """Coupon deals show a copyable code, other deals a link button."""
+    """Coupon deals show a coupon button, other deals a Get Deal button."""
     if deal.get("code"):
-        return copy_code(deal["code"])
+        return coupon_button(deal)
     if deal["status"] == "live":
         img, alt = shield("Get Deal", None, "f97316"), "Get Deal"
     else:
@@ -223,9 +228,9 @@ def link_name(d: dict) -> str:
 
 
 def card_button(d: dict) -> str:
-    """Top pick action: copyable coupon code, or a Get Deal button."""
+    """Top pick action: coupon button or Get Deal button, same size."""
     if d.get("code"):
-        return copy_code(d["code"])
+        return coupon_button(d, 28)
     img = shield("Get Deal", None, "f97316")
     return f'<a href="{d["url"]}"><img src="{img}" alt="Get Deal" height="28"></a>'
 
@@ -263,7 +268,7 @@ def render_row(d: dict) -> str:
         f'    <td align="center">{logo(d, size)}<br>{link_name(d)}</td>\n'
         f"    <td>{d['description']}</td>\n"
         f'    <td align="center">{offer}</td>\n'
-        f'    <td align="center">{button(d)}</td>\n'
+        f'    <td align="center" nowrap>{button(d)}</td>\n'
         f'    <td align="center">{STATUS[d["status"]]}</td>\n'
         "  </tr>"
     )
@@ -274,10 +279,10 @@ def render_table(deals: list[dict]) -> list[str]:
     return [
         "<table>",
         "  <tr>",
-        '    <th width="22%">Platform</th>',
-        '    <th width="36%">Description</th>',
-        '    <th width="16%">Deal</th>',
-        '    <th width="16%">Coupon / Link</th>',
+        '    <th width="20%">Platform</th>',
+        '    <th width="31%">Description</th>',
+        '    <th width="15%">Deal</th>',
+        '    <th width="24%">Coupon / Link</th>',
         '    <th width="10%">Status</th>',
         "  </tr>",
         *(render_row(d) for d in deals),

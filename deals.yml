@@ -155,89 +155,70 @@ categories:
     guide:
       text: Full Linux Foundation coupon guide
       url: https://devopscube.com/linux-foundation-coupon/
-    groups:
-      - title: Kubernetes Certifications
-        emoji: "☸️"
-        intro: Every single exam in the CNCF Kubernetes track, from entry level to expert.
-        deals:
-          - name: CKA, CKAD, CKS, KCNA & KCSA
-            domain: cncf.io
-            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png, .github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: Administrator, Application Developer, Security Specialist, Cloud Native Associate and Security Associate exams
-            offer: 40% off every exam
-            code: 40KUBE26CT
-            status: live
-
-      - title: Certification Bundles
-        emoji: "📦"
-        intro: Planning more than one exam? Bundles already cost less, and the coupon works on top for up to 47% off.
-        deals:
-          - name: Professional Bundles
-            domain: cncf.io
-            logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png]
-            url: https://tidd.ly/3Uc4okA
-            description: CKA + CKAD, CKA + CKS, or all three together (CKA + CKAD + CKS)
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: Associate + Professional Bundles
-            domain: cncf.io
-            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/cka.svg, .github/assets/certs/kcsa.svg, .github/assets/certs/cks.png]
-            url: https://tidd.ly/3Uc4okA
-            description: KCNA + CKA or KCSA + CKS. Start with the associate exam, then go pro
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: Associate Bundle
-            domain: cncf.io
-            logos: [.github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: KCNA + KCSA. Both associate-level exams together
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-
-      - title: Kubestronaut
-        emoji: "🚀"
-        intro: Pass all five Kubernetes certs to become a Kubestronaut, or pass all 16 to earn the Golden Kubestronaut title.
-        deals:
-          - name: Kubestronaut Bundle
-            domain: cncf.io
-            logos: [.github/assets/certs/kubestronaut.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: CKA, CKAD, CKS, KCNA and KCSA. All 5 exams for the Kubestronaut title
-            offer: Up to 47% off
-            code: 40KUBE26CT
-            status: live
-          - name: Golden Kubestronaut Bundle
-            domain: cncf.io
-            logos: [.github/assets/certs/golden-kubestronaut.svg]
-            url: https://tidd.ly/3Uc4okA
-            description: All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS
-            offer: About 48% off (bundle price + code)
-            code: DCUBE30
-            valid: Ends Nov 20
-            status: live
-
-      - title: Linux, Cloud & Other Certifications
-        emoji: "🐧"
-        intro: Every other Linux Foundation and cloud-native exam and course, plus short skill certs.
-        deals:
-          - name: Linux Foundation Certifications
-            domain: linuxfoundation.org
-            url: https://tidd.ly/3Uc4okA
-            description: LFCS, PCA, ICA, CAPA and every other LF cert, plus courses
-            offer: 40% off sitewide
-            code: 40KUBE26CT
-            status: live
-          - name: Linux Foundation SkillCreds
-            domain: linuxfoundation.org
-            url: https://tidd.ly/3Uc4okA
-            description: Short skill certs for Git, Bash, Helm, YAML and Vim
-            offer: Up to 30% off
-            code: SCRIPT30
-            status: live
+    deals:
+      - name: Kubernetes Certifications
+        domain: cncf.io
+        logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png, .github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
+        url: https://tidd.ly/3Uc4okA
+        description: CKA, CKAD, CKS, KCNA and KCSA. Every single exam in the CNCF Kubernetes track
+        offer: 40% off every exam
+        code: 40KUBE26CT
+        status: live
+      - name: Professional Bundles
+        domain: cncf.io
+        logos: [.github/assets/certs/cka.svg, .github/assets/certs/ckad.svg, .github/assets/certs/cks.png]
+        url: https://tidd.ly/3Uc4okA
+        description: CKA + CKAD, CKA + CKS, or all three together (CKA + CKAD + CKS)
+        offer: Up to 47% off
+        code: 40KUBE26CT
+        status: live
+      - name: Associate + Professional Bundles
+        domain: cncf.io
+        logos: [.github/assets/certs/kcna.svg, .github/assets/certs/cka.svg, .github/assets/certs/kcsa.svg, .github/assets/certs/cks.png]
+        url: https://tidd.ly/3Uc4okA
+        description: KCNA + CKA or KCSA + CKS. Start with the associate exam, then go pro
+        offer: Up to 47% off
+        code: 40KUBE26CT
+        status: live
+      - name: Associate Bundle
+        domain: cncf.io
+        logos: [.github/assets/certs/kcna.svg, .github/assets/certs/kcsa.svg]
+        url: https://tidd.ly/3Uc4okA
+        description: KCNA + KCSA. Both associate-level exams together
+        offer: Up to 47% off
+        code: 40KUBE26CT
+        status: live
+      - name: Kubestronaut Bundle
+        domain: cncf.io
+        logos: [.github/assets/certs/kubestronaut.svg]
+        url: https://tidd.ly/3Uc4okA
+        description: CKA, CKAD, CKS, KCNA and KCSA. All 5 exams for the Kubestronaut title
+        offer: Up to 47% off
+        code: 40KUBE26CT
+        status: live
+      - name: Golden Kubestronaut Bundle
+        domain: cncf.io
+        logos: [.github/assets/certs/golden-kubestronaut.svg]
+        url: https://tidd.ly/3Uc4okA
+        description: All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS
+        offer: About 48% off (bundle price + code)
+        code: DCUBE30
+        valid: Ends Nov 20
+        status: live
+      - name: Linux Foundation Certifications
+        domain: linuxfoundation.org
+        url: https://tidd.ly/3Uc4okA
+        description: LFCS, PCA, ICA, CAPA and every other LF cert, plus courses
+        offer: 40% off sitewide
+        code: 40KUBE26CT
+        status: live
+      - name: Linux Foundation SkillCreds
+        domain: linuxfoundation.org
+        url: https://tidd.ly/3Uc4okA
+        description: Short skill certs for Git, Bash, Helm, YAML and Vim
+        offer: Up to 30% off
+        code: SCRIPT30
+        status: live
 
   - id: hosting-platforms
     faq_topic: web hosting
