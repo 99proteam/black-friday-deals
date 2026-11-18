@@ -10,7 +10,7 @@ web hosting and creator tools, checked and updated through Cyber Monday.</p>
 
 <!-- STATS:START -->
 
-[![deals live](https://img.shields.io/badge/deals_live-32_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
+[![deals live](https://img.shields.io/badge/deals_live-35_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
 <!-- STATS:END -->
 
 </div>
@@ -241,11 +241,11 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://www.google.com/s2/favicons?domain=coursera.org&sz=128" width="32" height="32" alt="Coursera logo"><br><a href="https://imp.i384100.net/QOoeKa"><ins><b>Coursera</b></ins></a></td>
+    <td align="center"><img src="https://www.google.com/s2/favicons?domain=coursera.org&sz=128" width="32" height="32" alt="Coursera logo"><br><a href="https://devopscube.com/recommends/courseraplus"><ins><b>Coursera</b></ins></a></td>
     <td>University and industry courses and professional certificates</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://imp.i384100.net/QOoeKa"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
+    <td align="center"><b>40% off Coursera Plus annual plan</b></td>
+    <td align="center" nowrap><a href="https://devopscube.com/recommends/courseraplus"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=udemy.com&sz=128" width="32" height="32" alt="Udemy logo"><br><a href="https://trk.udemy.com/19nVVa"><ins><b>Udemy</b></ins></a></td>
@@ -255,11 +255,11 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
     <td align="center">⏳&nbsp;Soon</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://www.google.com/s2/favicons?domain=aced.io&sz=128" width="32" height="32" alt="Aced (formerly Exponent) logo"><br><a href="https://www.aced.io/?ref=n2u2mmm"><ins><b>Aced (formerly Exponent)</b></ins></a></td>
+    <td align="center"><img src="https://www.google.com/s2/favicons?domain=aced.io&sz=128" width="32" height="32" alt="Aced (formerly Exponent) logo"><br><a href="https://blog.techiescamp.com/go/aced"><ins><b>Aced (formerly Exponent)</b></ins></a></td>
     <td>Tech interview courses, real questions and mock interviews</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://www.aced.io/?ref=n2u2mmm"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
+    <td align="center"><b>70% off Pro annual plan</b></td>
+    <td align="center" nowrap><a href="https://blog.techiescamp.com/go/aced"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=codemia.io&sz=128" width="32" height="32" alt="Codemia logo"><br><a href="https://codemia.io?via=devopscube"><ins><b>Codemia</b></ins></a></td>
@@ -278,9 +278,9 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=algo.monster&sz=128" width="32" height="32" alt="AlgoMonster logo"><br><a href="https://devopscube.com/recommends/algomonster"><ins><b>AlgoMonster</b></ins></a></td>
     <td>Coding interview patterns with a structured, AI-assisted curriculum</td>
-    <td align="center">👀&nbsp;<i>Not announced yet</i></td>
-    <td align="center" nowrap><a href="https://devopscube.com/recommends/algomonster"><img src="https://img.shields.io/badge/Visit_Site-64748b?style=for-the-badge" alt="Visit Site" height="26"></a></td>
-    <td align="center">⏳&nbsp;Soon</td>
+    <td align="center"><b>50%&nbsp;off</b></td>
+    <td align="center" nowrap><a href="https://devopscube.com/recommends/algomonster"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
   </tr>
 </table>
 
@@ -579,7 +579,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 - **ByteByteGo**: 50% off annual plans
 - **Pluralsight & A Cloud Guru**: 60% off annual plans
 - **Educative**: Up to 72% off Unlimited plans
-- …and 3 more in [Learning Platforms](#learning-platforms).
+- …and 6 more in [Learning Platforms](#learning-platforms).
 
 </details>
 
@@ -633,7 +633,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>How often is this Black Friday tracker updated?</b></summary>
 
-We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 32 of 41 deals are live.
+We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 35 of 41 deals are live.
 
 </details>
 <!-- FAQ:END -->

@@ -77,10 +77,10 @@ categories:
         status: live
       - name: Coursera
         domain: coursera.org
-        url: https://imp.i384100.net/QOoeKa
+        url: https://devopscube.com/recommends/courseraplus
         description: University and industry courses and professional certificates
-        offer: Not announced yet
-        status: soon
+        offer: 40% off Coursera Plus annual plan
+        status: live
       - name: Udemy
         domain: udemy.com
         url: https://trk.udemy.com/19nVVa
@@ -89,10 +89,10 @@ categories:
         status: soon
       - name: Aced (formerly Exponent)
         domain: aced.io
-        url: https://www.aced.io/?ref=n2u2mmm
+        url: https://blog.techiescamp.com/go/aced
         description: Tech interview courses, real questions and mock interviews
-        offer: Not announced yet
-        status: soon
+        offer: 70% off Pro annual plan
+        status: live
       - name: Codemia
         domain: codemia.io
         url: https://codemia.io?via=devopscube
@@ -109,8 +109,8 @@ categories:
         domain: algo.monster
         url: https://devopscube.com/recommends/algomonster
         description: Coding interview patterns with a structured, AI-assisted curriculum
-        offer: Not announced yet
-        status: soon
+        offer: 50% off
+        status: live
 
   - id: books-reading
     faq_topic: tech book
