@@ -60,7 +60,7 @@ categories:
         domain: educative.io
         url: https://devopscube.com/recommends/educative/
         description: Interactive text-based courses with in-browser coding
-        offer: 55% off Unlimited plans
+        offer: Up to 72% off Unlimited plans
         status: live
       - name: DataCamp
         domain: datacamp.com
@@ -103,8 +103,8 @@ categories:
         domain: designgurus.io
         url: https://devopscube.com/recommends/designgurus
         description: System design and coding interview courses from ex-FAANG hiring managers
-        offer: Not announced yet
-        status: soon
+        offer: 70% off (90% off All Courses bundle)
+        status: live
       - name: AlgoMonster
         domain: algo.monster
         url: https://devopscube.com/recommends/algomonster
@@ -195,9 +195,8 @@ categories:
         logos: [.github/assets/certs/golden-kubestronaut.svg]
         url: https://tidd.ly/3Uc4okA
         description: All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS
-        offer: About 48% off (bundle price + code)
-        code: DCUBE30
-        valid: Ends Nov 20
+        offer: 40% off bundle price
+        code: 40KUBE26CT
         status: live
       - name: Linux Foundation Certifications
         domain: linuxfoundation.org
@@ -210,8 +209,8 @@ categories:
         domain: linuxfoundation.org
         url: https://tidd.ly/3Uc4okA
         description: Short skill certs for Git, Bash, Helm, YAML and Vim
-        offer: Up to 30% off
-        code: SCRIPT30
+        offer: 40% off
+        code: 40KUBE26CT
         status: live
       - name: FinOps Certifications
         domain: finops.org
@@ -234,14 +233,15 @@ categories:
         domain: bluehost.com
         url: https://comtechies.com/recommends/bluehost?ref=devopscube.com
         description: Shared and WordPress hosting
-        offer: Up to 62% off
+        offer: Up to 78% off
         status: live
       - name: Cloudways
         domain: cloudways.com
         url: https://devopscube.com/recommends/cloudways/
         description: Managed cloud hosting on DigitalOcean, AWS, Google Cloud and more
-        offer: 80% off
+        offer: 80% off for 2 months
         code: BFCM802
+        valid: Ends Dec 4
         status: live
       - name: Hostinger
         domain: hostinger.com
@@ -253,19 +253,19 @@ categories:
         domain: hosting.com
         url: https://comtechies.com/recommends/httpswwwa2hostingcomaid67af0c96b259cbid75dbf1c0?ref=devopscube.com
         description: Shared, WordPress and managed hosting
-        offer: Up to 87% off
+        offer: Up to 89% off
         status: live
       - name: ChemiCloud
         domain: chemicloud.com
         url: https://chemicloud.com/?ref=devopscube.com#68e6451055163
         description: Managed WordPress and shared hosting
-        offer: Up to 84% off
+        offer: Up to 88% off
         status: live
       - name: DreamHost
         domain: dreamhost.com
         url: https://click.dreamhost.com/aff_c?offer_id=8&aff_id=21910
         description: Shared, VPS and WordPress hosting
-        offer: Up to 83% off
+        offer: Up to 75% off
         status: live
       - name: Scala Hosting
         domain: scalahosting.com
@@ -277,20 +277,22 @@ categories:
         domain: inmotionhosting.com
         url: https://comtechies.com/recommends/httpspartnersinmotionhostingcomc56122972600334222?ref=devopscube.com
         description: Shared, VPS and dedicated hosting
-        offer: Up to 77% off
+        offer: Up to 70% off
         status: live
+        valid: Ends Dec 1
       - name: HostGator
         domain: hostgator.com
         url: https://comtechies.com/recommends/hostgator?ref=devopscube.com
         description: Shared and WordPress hosting
-        offer: Up to 76% off
+        offer: Up to 84% off
         status: live
       - name: Squarespace
         domain: squarespace.com
         url: https://squarespace.syuh.net/9Va5X0
         description: All-in-one website builder with hosting included
-        offer: Not announced yet
-        status: soon
+        offer: 55% off select plans
+        code: BFCM55
+        status: live
 
   - id: creator-tools
     faq_topic: creator tool
@@ -336,5 +338,5 @@ categories:
         domain: elevenlabs.io
         url: https://try.elevenlabs.io/p4fh9dhwbmjw?ref=devopscube.com
         description: AI voice-over for course videos and demos
-        offer: Up to 50% off
+        offer: Up to 55% off
         status: live
