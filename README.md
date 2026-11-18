@@ -465,10 +465,10 @@ Run your tech blog, portfolio, demo app or side project. Hosting has some of the
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://www.google.com/s2/favicons?domain=scalahosting.com&sz=128" width="32" height="32" alt="Scala Hosting logo"><br><a href="https://www.scalahosting.com/?ref=devopscube.com#jorgearagao"><ins><b>Scala Hosting</b></ins></a></td>
+    <td align="center"><img src="https://www.google.com/s2/favicons?domain=scalahosting.com&sz=128" width="32" height="32" alt="Scala Hosting logo"><br><a href="https://www.scalahosting.com/?ref=devopscube.com"><ins><b>Scala Hosting</b></ins></a></td>
     <td>Managed VPS hosting with the SPanel control panel</td>
     <td align="center"><b>Up&nbsp;to&nbsp;78%&nbsp;off</b></td>
-    <td align="center" nowrap><a href="https://www.scalahosting.com/?ref=devopscube.com#jorgearagao"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
+    <td align="center" nowrap><a href="https://www.scalahosting.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
