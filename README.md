@@ -10,7 +10,7 @@ web hosting and creator tools, checked and updated through Cyber Monday.</p>
 
 <!-- STATS:START -->
 
-[![deals live](https://img.shields.io/badge/deals_live-29_of_40-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
+[![deals live](https://img.shields.io/badge/deals_live-30_of_41-22c55e?style=for-the-badge)](#categories) ![black friday](https://img.shields.io/badge/black_friday-Nov_27%2C_2026-111827?style=for-the-badge) ![cyber monday](https://img.shields.io/badge/cyber_monday-Nov_30%2C_2026-6366f1?style=for-the-badge) ![last checked](https://img.shields.io/badge/last_checked-Nov_18%2C_2026-0ea5e9?style=for-the-badge)
 <!-- STATS:END -->
 
 </div>
@@ -80,7 +80,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
       <sub>&nbsp;</sub><br>
       <a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://www.google.com/s2/favicons?domain=devopscube.com&sz=128" width="44" height="44" alt="DevOpsCube Courses logo"></a><br>
       <a href="https://courses.devopscube.com/?ref=devopscube.com"><ins><b>DevOpsCube Courses</b></ins></a><br>
-      <b>Up&nbsp;to&nbsp;40%&nbsp;off</b><br>
+      <b>Up&nbsp;to&nbsp;50%&nbsp;off</b><br>
       <sub>&nbsp;</sub>
     </td>
     <td align="center" valign="top" width="25%">
@@ -94,7 +94,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
   <tr>
     <td align="center" width="25%"><a href="https://devopscube.com/recommends/pluralsight-free-trial/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
     <td align="center" width="25%"><a href="https://devopscube.com/recommends/educative/"><img src="https://img.shields.io/badge/Get_Deal-f97316?style=for-the-badge" alt="Get Deal" height="28"></a></td>
-    <td align="center" width="25%"><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-FLASH40-f97316?style=for-the-badge&labelColor=111827" alt="FLASH40" height="28"></a></td>
+    <td align="center" width="25%"><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-CYBER50-f97316?style=for-the-badge&labelColor=111827" alt="CYBER50" height="28"></a></td>
     <td align="center" width="25%"><a href="https://devopscube.com/recommends/cloudways/"><img src="https://img.shields.io/badge/Code-BFCM802-f97316?style=for-the-badge&labelColor=111827" alt="BFCM802" height="28"></a></td>
   </tr>
 </table>
@@ -156,7 +156,7 @@ Our favourite deals this year for everyone working in **DevOps, Cloud, Kubernete
     </td>
     <td align="center" width="20%">
       <a href="#certifications">📜<br><b>Certifications</b></a><br>
-      <sub>8 deals</sub>
+      <sub>9 deals</sub>
     </td>
     <td align="center" width="20%">
       <a href="#hosting-platforms">🌐<br><b>Hosting Platforms</b></a><br>
@@ -236,8 +236,8 @@ Black Friday is the cheapest time of the year to level up. These platforms cover
   <tr>
     <td align="center"><img src="https://www.google.com/s2/favicons?domain=devopscube.com&sz=128" width="32" height="32" alt="DevOpsCube Courses logo"><br><a href="https://courses.devopscube.com/?ref=devopscube.com"><ins><b>DevOpsCube Courses</b></ins></a></td>
     <td>Practical Kubernetes and DevOps courses from the DevOpsCube team</td>
-    <td align="center"><b>Up&nbsp;to&nbsp;40%&nbsp;off</b></td>
-    <td align="center" nowrap><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-FLASH40-f97316?style=for-the-badge&labelColor=111827" alt="FLASH40" height="26"></a></td>
+    <td align="center"><b>Up&nbsp;to&nbsp;50%&nbsp;off</b></td>
+    <td align="center" nowrap><a href="https://courses.devopscube.com/?ref=devopscube.com"><img src="https://img.shields.io/badge/Code-CYBER50-f97316?style=for-the-badge&labelColor=111827" alt="CYBER50" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
   <tr>
@@ -395,9 +395,16 @@ Prove your skills with a certification. The Linux Foundation runs its biggest sa
     <td align="center" nowrap><a href="https://tidd.ly/3Uc4okA"><img src="https://img.shields.io/badge/Code-SCRIPT30-f97316?style=for-the-badge&labelColor=111827" alt="SCRIPT30" height="26"></a></td>
     <td align="center">🟢&nbsp;Live</td>
   </tr>
+  <tr>
+    <td align="center"><img src="https://www.google.com/s2/favicons?domain=finops.org&sz=128" width="32" height="32" alt="FinOps Certifications logo"><br><a href="https://learn.finops.org/path/finops-certified-practitioner-self-paced"><ins><b>FinOps Certifications</b></ins></a></td>
+    <td>FinOps Certified Practitioner, Engineer, FOCUS Analyst and FinOps for AI</td>
+    <td align="center"><b>20%&nbsp;off</b></td>
+    <td align="center" nowrap><a href="https://learn.finops.org/path/finops-certified-practitioner-self-paced"><img src="https://img.shields.io/badge/Code-COMTECHIES__20-f97316?style=for-the-badge&labelColor=111827" alt="COMTECHIES_20" height="26"></a></td>
+    <td align="center">🟢&nbsp;Live</td>
+  </tr>
 </table>
 
-📖 **[CKA Certification Guide on GitHub](https://github.com/techiescamp/cka-certification-guide)**: free study guide, hands-on labs and the latest CKA coupon.
+📖 **[Full Linux Foundation coupon guide](https://github.com/techiescamp/linux-foundation-coupon)**: every Linux Foundation code, bundle and saving in one place.
 
 <p align="right"><a href="#categories">⬆ Back to categories</a></p>
 
@@ -584,7 +591,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 - **Associate + Professional Bundles**: Up to 47% off with code `40KUBE26CT`
 - **Associate Bundle**: Up to 47% off with code `40KUBE26CT`
 - **Kubestronaut Bundle**: Up to 47% off with code `40KUBE26CT`
-- …and 3 more in [Certifications](#certifications).
+- …and 4 more in [Certifications](#certifications).
 
 </details>
 
@@ -614,10 +621,11 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>Which Black Friday 2026 coupon codes work right now?</b></summary>
 
-- `FLASH40`: DevOpsCube Courses
+- `CYBER50`: DevOpsCube Courses
 - `40KUBE26CT`: Kubernetes Certifications
 - `DCUBE30`: Golden Kubestronaut Bundle
 - `SCRIPT30`: Linux Foundation SkillCreds
+- `COMTECHIES_20`: FinOps Certifications
 - `BFCM802`: Cloudways
 - `DCUBE20OFF`: Beehiiv
 
@@ -626,7 +634,7 @@ Black Friday 2026 is on **Nov 27, 2026** and Cyber Monday 2026 is on **Nov 30, 2
 <details>
 <summary><b>How often is this Black Friday tracker updated?</b></summary>
 
-We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 29 of 40 deals are live.
+We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. Last checked: **Nov 18, 2026**. 30 of 41 deals are live.
 
 </details>
 <!-- FAQ:END -->

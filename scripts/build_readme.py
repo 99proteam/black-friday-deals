@@ -306,7 +306,7 @@ def render_deals(data: dict) -> str:
                 out.append(f"> {group['intro']}\n")
             out.extend(render_table(group["deals"]))
         if cat.get("guide"):
-            out.append(f"📖 **[{cat['guide']['text']}]({cat['guide']['url']})**: free study guide, hands-on labs and the latest CKA coupon.\n")
+            out.append(f"📖 **[{cat['guide']['text']}]({cat['guide']['url']})**: every Linux Foundation code, bundle and saving in one place.\n")
         out.append('<p align="right"><a href="#categories">⬆ Back to categories</a></p>\n')
     return "\n".join(out).rstrip() + "\n"
 

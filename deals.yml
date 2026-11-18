@@ -72,8 +72,8 @@ categories:
         domain: devopscube.com
         url: https://courses.devopscube.com/?ref=devopscube.com
         description: Practical Kubernetes and DevOps courses from the DevOpsCube team
-        offer: Up to 40% off
-        code: FLASH40
+        offer: Up to 50% off
+        code: CYBER50
         status: live
       - name: Coursera
         domain: coursera.org
@@ -147,8 +147,8 @@ categories:
       Prove your skills with a certification. The Linux Foundation runs its biggest sale of
       the year now, and bundles save the most.
     guide:
-      text: CKA Certification Guide on GitHub
-      url: https://github.com/techiescamp/cka-certification-guide
+      text: Full Linux Foundation coupon guide
+      url: https://github.com/techiescamp/linux-foundation-coupon
     deals:
       - name: Kubernetes Certifications
         domain: cncf.io
@@ -212,6 +212,13 @@ categories:
         description: Short skill certs for Git, Bash, Helm, YAML and Vim
         offer: Up to 30% off
         code: SCRIPT30
+        status: live
+      - name: FinOps Certifications
+        domain: finops.org
+        url: https://learn.finops.org/path/finops-certified-practitioner-self-paced
+        description: FinOps Certified Practitioner, Engineer, FOCUS Analyst and FinOps for AI
+        offer: 20% off
+        code: COMTECHIES_20
         status: live
 
   - id: hosting-platforms
