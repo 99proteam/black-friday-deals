@@ -4,10 +4,11 @@ Thanks for helping engineers save money! This list is for deals that are useful 
 
 ## What we accept
 
-- Learning platforms, labs and courses for DevOps, cloud, Kubernetes, SRE or MLOps
+- Learning platforms, labs, courses, interview prep and system design for DevOps, cloud, Kubernetes, SRE or MLOps
+- Tech books and reading platforms
 - Certification exams and bundles (Linux Foundation, CNCF, AWS, Azure, GCP, HashiCorp and so on)
-- Hosting, VPS, managed cloud and free cloud credits
-- Tools engineers use every day: interview prep, books, creator tools for tech content
+- Web, VPS and managed cloud hosting
+- Creator tools that help engineers share what they know: blogs, newsletters, courses, demos
 - Real discounts with a clear offer. No "contact sales" or fake "was $999" prices.
 
 ## The easy way: open an issue
@@ -17,7 +18,7 @@ Thanks for helping engineers save money! This list is for deals that are useful 
 ## The developer way: open a pull request
 
 1. Fork the repo and create a branch from `dev`.
-2. Add your deal to [`deals.yml`](deals.yml) under the right category. Copy this block:
+2. Add your deal to [`deals.yml`](deals.yml) under the right category (or the right group inside Certifications). Deals show in the same order as in the file. Copy this block:
 
    ```yaml
    - name: KodeKloud                 # product name

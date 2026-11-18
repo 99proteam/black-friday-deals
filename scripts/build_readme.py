@@ -29,8 +29,50 @@ STATUS = {
     "soon": "⏳&nbsp;Soon",
     "expired": "⛔&nbsp;Expired",
 }
-STATUS_ORDER = {"live": 0, "soon": 1, "expired": 2}
 REQUIRED = ("name", "domain", "url", "description", "offer", "status")
+PICKS_PER_ROW = 4
+
+
+# ------------------------------------------------------------------- helpers
+
+def groups_of(cat: dict) -> list[dict]:
+    """A category has either a flat `deals` list or a list of `groups`."""
+    if "groups" in cat:
+        return cat["groups"]
+    return [{"deals": cat.get("deals", [])}]
+
+
+def deals_of(cat: dict) -> list[dict]:
+    return [d for g in groups_of(cat) for d in g.get("deals", [])]
+
+
+def all_deals(data: dict) -> list[dict]:
+    return [d for cat in data["categories"] for d in deals_of(cat)]
+
+
+def fmt_date(value) -> str:
+    d = value if isinstance(value, dt.date) else dt.date.fromisoformat(str(value))
+    return f"{d:%b} {d.day}, {d.year}"
+
+
+def shield(label: str, message: str | None, color: str) -> str:
+    def esc(s: str) -> str:
+        return quote(s.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="_")
+
+    path = f"{esc(label)}-{esc(message)}-{color}" if message else f"{esc(label)}-{color}"
+    return f"https://img.shields.io/badge/{path}?style=for-the-badge"
+
+
+def favicon(domain: str, size: int) -> str:
+    return f"https://www.google.com/s2/favicons?domain={domain}&sz={size}"
+
+
+def button(deal: dict) -> str:
+    if deal["status"] == "live":
+        label, color = "Get Deal", "f97316"
+    else:
+        label, color = "Visit Site", "64748b"
+    return f'<a href="{deal["url"]}"><img src="{shield(label, None, color)}" alt="{label}" height="26"></a>'
 
 
 # ---------------------------------------------------------------- validation
@@ -39,10 +81,12 @@ def validate(data: dict) -> list[str]:
     errors: list[str] = []
     names: set[str] = set()
     for cat in data.get("categories", []):
-        for key in ("id", "emoji", "title", "blurb", "deals"):
+        for key in ("id", "emoji", "title", "intro"):
             if key not in cat:
                 errors.append(f"category {cat.get('id', '?')}: missing '{key}'")
-        for deal in cat.get("deals", []):
+        if "deals" not in cat and "groups" not in cat:
+            errors.append(f"category {cat.get('id', '?')}: needs 'deals' or 'groups'")
+        for deal in deals_of(cat):
             label = f"{cat.get('id')}/{deal.get('name', '?')}"
             for key in REQUIRED:
                 if not deal.get(key):
@@ -64,38 +108,16 @@ def validate(data: dict) -> list[str]:
 
 # ----------------------------------------------------------------- rendering
 
-def favicon(domain: str, size: int) -> str:
-    return f"https://www.google.com/s2/favicons?domain={domain}&sz={size}"
-
-
-def badge(label: str, message: str, color: str, link: str | None = None) -> str:
-    def esc(s: str) -> str:
-        return quote(s.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="_")
-
-    img = f"![{label}](https://img.shields.io/badge/{esc(label)}-{esc(message)}-{color}?style=for-the-badge)"
-    return f"[{img}]({link})" if link else img
-
-
-def all_deals(data: dict):
-    for cat in data["categories"]:
-        yield from cat["deals"]
-
-
-def fmt_date(value) -> str:
-    d = value if isinstance(value, dt.date) else dt.date.fromisoformat(str(value))
-    return f"{d:%b} {d.day}, {d.year}"
-
-
 def render_stats(data: dict) -> str:
-    deals = list(all_deals(data))
+    deals = all_deals(data)
     live = sum(d["status"] == "live" for d in deals)
     # Plain markdown (no HTML wrapper) so GitHub renders the badge images.
     # The surrounding <div align="center"> in README.md centres them.
     badges = [
-        badge("deals live", f"{live} of {len(deals)}", "22c55e", "#categories"),
-        badge("black friday", fmt_date(data["black_friday"]), "111827"),
-        badge("cyber monday", fmt_date(data["cyber_monday"]), "6366f1"),
-        badge("last checked", fmt_date(data["last_updated"]), "0ea5e9"),
+        f"[![deals live]({shield('deals live', f'{live} of {len(deals)}', '22c55e')})](#categories)",
+        f"![black friday]({shield('black friday', fmt_date(data['black_friday']), '111827')})",
+        f"![cyber monday]({shield('cyber monday', fmt_date(data['cyber_monday']), '6366f1')})",
+        f"![last checked]({shield('last checked', fmt_date(data['last_updated']), '0ea5e9')})",
     ]
     return "\n" + " ".join(badges) + "\n"
 
@@ -103,8 +125,9 @@ def render_stats(data: dict) -> str:
 def render_nav(data: dict) -> str:
     chips = []
     for cat in data["categories"]:
+        title = cat["title"].replace(" ", "&nbsp;")
         chips.append(
-            f'<a href="#{cat["id"]}">{cat["emoji"]}&nbsp;{cat["title"].replace(" ", "&nbsp;")}</a>&nbsp;<code>{len(cat["deals"])}</code>'
+            f'<a href="#{cat["id"]}">{cat["emoji"]}&nbsp;{title}</a>&nbsp;<code>{len(deals_of(cat))}</code>'
         )
     return '<p align="center">\n  ' + " &nbsp;·&nbsp;\n  ".join(chips) + "\n</p>"
 
@@ -112,52 +135,62 @@ def render_nav(data: dict) -> str:
 def render_top_picks(data: dict) -> str:
     by_name = {d["name"]: d for d in all_deals(data)}
     picks = [by_name[n] for n in data.get("top_picks", [])]
-    width = f"{100 // max(len(picks), 1)}%"
-    cells = []
-    for d in picks:
-        code = f"<br><code>{d['code']}</code>" if d.get("code") else "<br><sub>No code needed</sub>"
-        cells.append(
-            f'    <td align="center" width="{width}">\n'
-            f'      <a href="{d["url"]}"><img src="{favicon(d["domain"], 64)}" width="40" height="40" alt=""><br>'
-            f'<b>{d["name"]}</b></a><br>\n'
-            f'      <sub>{d["offer"]}</sub>{code}\n'
-            f"    </td>"
-        )
-    return "<table>\n  <tr>\n" + "\n".join(cells) + "\n  </tr>\n</table>"
+    width = f"{100 // PICKS_PER_ROW}%"
+    rows = []
+    for i in range(0, len(picks), PICKS_PER_ROW):
+        cells = []
+        for d in picks[i : i + PICKS_PER_ROW]:
+            code = f"<code>{d['code']}</code>" if d.get("code") else "<sub>No code needed</sub>"
+            cells.append(
+                f'    <td align="center" width="{width}">\n'
+                f'      <a href="{d["url"]}"><img src="{favicon(d["domain"], 64)}" width="40" height="40" alt=""></a><br>\n'
+                f'      <a href="{d["url"]}"><b>{d["name"]}</b></a><br>\n'
+                f'      <sub>{d["offer"]}</sub><br>\n'
+                f"      {code}\n"
+                f"    </td>"
+            )
+        rows.append("  <tr>\n" + "\n".join(cells) + "\n  </tr>")
+    return "<table>\n" + "\n".join(rows) + "\n</table>"
 
 
 def render_row(d: dict) -> str:
-    icon = f'<img src="{favicon(d["domain"], 32)}" width="20" height="20" alt="">'
-    name = f'**[{d["name"]}]({d["url"]})**<br><sub>{d["description"]}</sub>'
-    offer = d["offer"]
-    if d["status"] == "soon":
-        offer = f"<i>{offer}</i>"
-    else:
-        offer = f"**{offer}**"
+    platform = (
+        f'<img src="{favicon(d["domain"], 32)}" width="16" height="16" alt="">&nbsp;'
+        f'**[{d["name"]}]({d["url"]})**'
+    )
+    text = d["offer"]
+    if len(text) <= 18:  # keep short offers like "40% off" on one line
+        text = text.replace(" ", "&nbsp;")
+    offer = f"<i>{text}</i>" if d["status"] == "soon" else f"**{text}**"
     if d.get("hot"):
-        offer = f"🔥 {offer}"
+        offer = f"🔥&nbsp;{offer}"
     if d.get("valid"):
         offer += f"<br><sub>⌛ {d['valid']}</sub>"
-    if d.get("code"):
-        code = f"`{d['code']}`"
-    elif d["status"] == "live":
-        code = "<sub>Not needed</sub>"
-    else:
-        code = "—"
-    return f"| {icon} | {name} | {offer} | {code} | {STATUS[d['status']]} |"
+    get_it = f"`{d['code']}`<br>{button(d)}" if d.get("code") else button(d)
+    return f"| {platform} | {d['description']} | {offer} | {get_it} | {STATUS[d['status']]} |"
+
+
+def render_table(deals: list[dict]) -> list[str]:
+    return [
+        "| Platform | Description | Deal | Coupon / Link | Status |",
+        "|:--|:--|:--|:-:|:-:|",
+        *(render_row(d) for d in deals),
+        "",
+    ]
 
 
 def render_deals(data: dict) -> str:
     out: list[str] = []
     for cat in data["categories"]:
-        deals = sorted(cat["deals"], key=lambda d: STATUS_ORDER[d["status"]])
         out.append(f'<a id="{cat["id"]}"></a>\n')
         out.append(f"## {cat['emoji']} {cat['title']}\n")
-        out.append(f"> {cat['blurb']}\n")
-        out.append("| | Platform | Deal | Coupon | Status |")
-        out.append("|:-:|:--|:--|:-:|:-:|")
-        out.extend(render_row(d) for d in deals)
-        out.append("")
+        out.append(f"{cat['intro'].strip()}\n")
+        for group in groups_of(cat):
+            if group.get("title"):
+                out.append(f"### {group.get('emoji', '')} {group['title']}".replace("###  ", "### ") + "\n")
+            if group.get("intro"):
+                out.append(f"> {group['intro']}\n")
+            out.extend(render_table(group["deals"]))
         if cat.get("guide"):
             out.append(f"📖 **[{cat['guide']['text']}]({cat['guide']['url']})**: every code, bundle and saving explained.\n")
         out.append('<p align="right"><a href="#categories">⬆ Back to categories</a></p>\n')
@@ -204,7 +237,7 @@ def main() -> int:
         return 0
 
     README.write_text(new, encoding="utf-8")
-    print(f"README.md rebuilt with {sum(1 for _ in all_deals(data))} deals.")
+    print(f"README.md rebuilt with {len(all_deals(data))} deals.")
     return 0
 
 

@@ -2,6 +2,7 @@
 # Edit this file, then run:  python scripts/build_readme.py
 # Field guide: see CONTRIBUTING.md
 #
+# Deals show in the README in the same order as in this file.
 # status:  live | soon | expired
 # hot:     true when the deal is 50% off or more (adds 🔥)
 
@@ -10,18 +11,26 @@ last_updated: 2026-11-18
 black_friday: 2026-11-27
 cyber_monday: 2026-11-30
 
-# Shown in the "Top picks" cards at the top of the README (by deal name).
+# Cards in the "Top picks" grid, 4 per row (by deal name).
 top_picks:
   - Linux Foundation Certifications
   - KodeKloud
-  - Cloudways
+  - Udacity
+  - ByteByteGo
+  - Pluralsight & A Cloud Guru
+  - Educative
   - DevOpsCube Courses
+  - Cloudways
 
 categories:
   - id: learning-platforms
     emoji: "🎓"
     title: Learning Platforms
-    blurb: Courses, hands-on labs and learning paths for DevOps, Cloud, SRE and MLOps.
+    intro: >-
+      Black Friday is the cheapest time of the year to level up. These platforms cover
+      everything from Linux and Kubernetes labs to cloud certification prep, system design
+      and interview practice. Most of the big savings are on annual plans, so pick the one
+      that matches where you are in your DevOps, SRE, Platform or MLOps journey.
     deals:
       - name: KodeKloud
         domain: kodekloud.com
@@ -30,25 +39,25 @@ categories:
         offer: 50% off
         status: live
         hot: true
-      - name: DevOpsCube Courses
-        domain: devopscube.com
-        url: https://courses.devopscube.com/?ref=devopscube.com
-        description: Practical Kubernetes and DevOps courses from the DevOpsCube team
-        offer: Up to 40% off
-        code: FLASH40
-        status: live
-      - name: Pluralsight & A Cloud Guru
-        domain: pluralsight.com
-        url: https://devopscube.com/recommends/pluralsight-free-trial/
-        description: Cloud and DevOps skills plus AWS, Azure and GCP certification prep
-        offer: 60% off annual plans
-        status: live
-        hot: true
       - name: Udacity
         domain: udacity.com
         url: https://devopscube.com/recommends/udacity-plans/
         description: Nanodegree programs in cloud, AI and data engineering
         offer: Up to 55% off (personalized)
+        status: live
+        hot: true
+      - name: ByteByteGo
+        domain: bytebytego.com
+        url: https://bytebytego.com/?fpr=devopscube&ref=devopscube.com
+        description: Visual system design courses and guides for interviews and real work
+        offer: 50% off annual plans
+        status: live
+        hot: true
+      - name: Pluralsight & A Cloud Guru
+        domain: pluralsight.com
+        url: https://devopscube.com/recommends/pluralsight-free-trial/
+        description: Cloud and DevOps skills plus AWS, Azure and GCP certification prep
+        offer: 60% off annual plans
         status: live
         hot: true
       - name: Educative
@@ -65,6 +74,13 @@ categories:
         offer: 50% off annual plans
         status: live
         hot: true
+      - name: DevOpsCube Courses
+        domain: devopscube.com
+        url: https://courses.devopscube.com/?ref=devopscube.com
+        description: Practical Kubernetes and DevOps courses from the DevOpsCube team
+        offer: Up to 40% off
+        code: FLASH40
+        status: live
       - name: Coursera
         domain: coursera.org
         url: https://imp.i384100.net/QOoeKa
@@ -77,6 +93,18 @@ categories:
         description: Low-cost video courses on almost every DevOps tool
         offer: Not announced yet
         status: soon
+      - name: Aced (formerly Exponent)
+        domain: aced.io
+        url: https://www.aced.io/?ref=n2u2mmm
+        description: Tech interview courses, real questions and mock interviews
+        offer: Not announced yet
+        status: soon
+      - name: Codemia
+        domain: codemia.io
+        url: https://codemia.io?via=devopscube
+        description: System design practice with AI feedback on 120+ problems
+        offer: Not announced yet
+        status: soon
       - name: Skillshare
         domain: skillshare.com
         url: https://skillshare.eqcm.net/RKv32
@@ -84,48 +112,176 @@ categories:
         offer: Not announced yet
         status: soon
 
+  - id: books-reading
+    emoji: "📚"
+    title: Books & Reading
+    intro: >-
+      Books are still the best way to go deep on a topic. Stock up on DevOps, Kubernetes,
+      cloud, SRE and system design titles from the tech publishers engineers trust most.
+    deals:
+      - name: O'Reilly
+        domain: oreilly.com
+        url: https://oreillymedia.pxf.io/g1mgj0
+        description: Tech books, videos and live training from top publishers
+        offer: Not announced yet
+        status: soon
+      - name: Manning
+        domain: manning.com
+        url: https://www.manning.com/
+        description: In-depth programming and DevOps books with the liveBook online reader
+        offer: Not announced yet
+        status: soon
+      - name: Packt
+        domain: packtpub.com
+        url: https://www.packtpub.com/
+        description: Practical DevOps, cloud and AI books and videos
+        offer: Not announced yet
+        status: soon
+
   - id: certifications
     emoji: "📜"
     title: Certifications
-    blurb: Kubernetes, cloud-native and Linux certification exams and bundles.
+    intro: >-
+      A certification is one of the fastest ways to prove your skills to employers, and the
+      Linux Foundation runs its biggest discounts of the year around Black Friday. Use the
+      coupon code at checkout. If you plan to take more than one exam, a bundle saves the most.
     guide:
       text: Full Linux Foundation coupon guide
       url: https://devopscube.com/linux-foundation-coupon/
-    deals:
-      - name: Linux Foundation Certifications
-        domain: linuxfoundation.org
-        url: https://tidd.ly/3Uc4okA
-        description: CKA, CKAD, CKS, KCNA, KCSA, LFCS and more, plus courses and SkillCreds
-        offer: 40% off everything (KubeCon sitewide sale)
-        code: 40KUBE26CT
-        status: live
-      - name: Kubernetes Certification Bundles
-        domain: cncf.io
-        url: https://tidd.ly/3Uc4okA
-        description: CKA + CKAD, CKA + CKS, CKA + CKAD + CKS and Kubestronaut (5 certs)
-        offer: Up to 47% off
-        code: 40KUBE26CT
-        status: live
-      - name: Golden Kubestronaut Bundle
-        domain: cncf.io
-        url: https://tidd.ly/3Uc4okA
-        description: All 16 CNCF and LF certs, including CKA, CKAD, CKS, PCA, ICA and CAPA
-        offer: About 48% off (bundle price + code)
-        code: DCUBE30
-        valid: Ends Nov 20
-        status: live
-      - name: Linux Foundation SkillCreds
-        domain: linuxfoundation.org
-        url: https://tidd.ly/3Uc4okA
-        description: Short skill certs for Git, Bash, Helm, YAML and Vim
-        offer: Up to 30% off
-        code: SCRIPT30
-        status: live
+    groups:
+      - title: Kubernetes Certifications
+        emoji: "☸️"
+        intro: Single exams from the CNCF Kubernetes track, from entry level to expert.
+        deals:
+          - name: CKA
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Certified Kubernetes Administrator. Set up, run and troubleshoot clusters
+            offer: 40% off
+            code: 40KUBE26CT
+            status: live
+          - name: CKAD
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Certified Kubernetes Application Developer. Build and deploy apps on Kubernetes
+            offer: 40% off
+            code: 40KUBE26CT
+            status: live
+          - name: CKS
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Certified Kubernetes Security Specialist. Secure clusters and workloads (needs CKA)
+            offer: 40% off
+            code: 40KUBE26CT
+            status: live
+          - name: KCNA
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Kubernetes and Cloud Native Associate. The entry-level cloud-native exam
+            offer: 40% off
+            code: 40KUBE26CT
+            status: live
+          - name: KCSA
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Kubernetes and Cloud Native Security Associate. Entry-level security exam
+            offer: 40% off
+            code: 40KUBE26CT
+            status: live
+
+      - title: Certification Bundles
+        emoji: "📦"
+        intro: Planning more than one exam? Bundles already cost less, and the coupon works on top for up to 47% off.
+        deals:
+          - name: CKA + CKAD
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Admin and developer. The most popular Kubernetes pair
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: CKA + CKS
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Admin and security specialist
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: CKA + CKAD + CKS
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: All three professional Kubernetes exams
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: KCNA + CKA
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Start with the associate exam, then go for the admin cert
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: KCSA + CKS
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Security associate plus security specialist
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: KCNA + KCSA
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: Both associate-level exams
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+
+      - title: Kubestronaut
+        emoji: "🚀"
+        intro: Pass all five Kubernetes certs to become a Kubestronaut, or pass all 16 to earn the Golden Kubestronaut title.
+        deals:
+          - name: Kubestronaut Bundle
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: CKA, CKAD, CKS, KCNA and KCSA. All 5 exams for the Kubestronaut title
+            offer: Up to 47% off
+            code: 40KUBE26CT
+            status: live
+          - name: Golden Kubestronaut Bundle
+            domain: cncf.io
+            url: https://tidd.ly/3Uc4okA
+            description: All 16 CNCF and LF certs, including PCA, ICA, CAPA and LFCS
+            offer: About 48% off (bundle price + code)
+            code: DCUBE30
+            valid: Ends Nov 20
+            status: live
+
+      - title: Linux & Other Certifications
+        emoji: "🐧"
+        intro: Every other Linux Foundation exam and course, plus short skill certs.
+        deals:
+          - name: Linux Foundation Certifications
+            domain: linuxfoundation.org
+            url: https://tidd.ly/3Uc4okA
+            description: LFCS, PCA, ICA, CAPA and every other LF cert, plus courses
+            offer: 40% off sitewide
+            code: 40KUBE26CT
+            status: live
+          - name: Linux Foundation SkillCreds
+            domain: linuxfoundation.org
+            url: https://tidd.ly/3Uc4okA
+            description: Short skill certs for Git, Bash, Helm, YAML and Vim
+            offer: Up to 30% off
+            code: SCRIPT30
+            status: live
 
   - id: hosting-platforms
     emoji: "🌐"
     title: Hosting Platforms
-    blurb: Web, WordPress, VPS and managed cloud hosting for blogs, side projects and demos.
+    intro: >-
+      Run your tech blog, portfolio, demo app or side project. Hosting has some of the
+      deepest discounts of the year, but they usually apply to the first term only, so check
+      the renewal price before you pick a long plan.
     deals:
       - name: Cloudways
         domain: cloudways.com
@@ -198,115 +354,14 @@ categories:
         offer: Not announced yet
         status: soon
 
-  - id: free-cloud-credits
-    emoji: "☁️"
-    title: Free Cloud Credits
-    blurb: Free credits to run Kubernetes clusters, POCs and labs. Watch usage and expiry so you don't get billed.
-    deals:
-      - name: Google Cloud (GKE)
-        domain: cloud.google.com
-        url: https://cloud.google.com/kubernetes-engine?hl=en&ref=devopscube.com
-        description: Google Kubernetes Engine and all Google Cloud services
-        offer: $300 free credits
-        status: live
-      - name: AWS
-        domain: aws.amazon.com
-        url: https://pages.awscloud.com/GLOBAL-acq-LN-ARRC-reg.html?ref=devopscube.com
-        description: Amazon Web Services credits for proof-of-concept projects
-        offer: $300 free POC credits
-        status: live
-      - name: Vultr
-        domain: vultr.com
-        url: https://www.vultr.com/?ref=devopscube.com
-        description: Cloud compute and Vultr Kubernetes Engine
-        offer: $250 free credits
-        status: live
-      - name: DigitalOcean
-        domain: digitalocean.com
-        url: https://www.digitalocean.com/?refcode=8223070813&ref=devopscube.com
-        description: Droplets and DigitalOcean Kubernetes (DOKS)
-        offer: $200 free credits
-        status: live
-      - name: Microsoft Azure
-        domain: azure.microsoft.com
-        url: https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account?icid=azurefreeaccount&ref=devopscube.com
-        description: Azure free account, including AKS
-        offer: $200 free credits
-        status: live
-      - name: Akamai Cloud (Linode)
-        domain: linode.com
-        url: https://linode.gvw92c.net/Ao32WJ?ref=devopscube.com
-        description: Cloud compute and Linode Kubernetes Engine (LKE)
-        offer: $100 free credits
-        status: live
-
-  - id: interview-prep
-    emoji: "🧠"
-    title: Interview Prep & System Design
-    blurb: System design and interview practice for SRE, platform and DevOps roles.
-    deals:
-      - name: ByteByteGo
-        domain: bytebytego.com
-        url: https://bytebytego.com/?fpr=devopscube&ref=devopscube.com
-        description: Visual system design courses and guides
-        offer: 50% off annual plans
-        status: live
-        hot: true
-      - name: Aced (formerly Exponent)
-        domain: aced.io
-        url: https://www.aced.io/?ref=n2u2mmm
-        description: Tech interview courses, real questions and mock interviews
-        offer: Not announced yet
-        status: soon
-      - name: Codemia
-        domain: codemia.io
-        url: https://codemia.io?via=devopscube
-        description: System design practice with AI feedback on 120+ problems
-        offer: Not announced yet
-        status: soon
-
-  - id: books-reading
-    emoji: "📚"
-    title: Books & Reading
-    blurb: Tech books, video libraries and quick summaries.
-    deals:
-      - name: O'Reilly
-        domain: oreilly.com
-        url: https://oreillymedia.pxf.io/g1mgj0
-        description: Tech books, videos and live training from top publishers
-        offer: Not announced yet
-        status: soon
-      - name: Blinkist
-        domain: blinkist.com
-        url: https://blinkist.o6eiov.net/5EPPn
-        description: 15-minute summaries of non-fiction books
-        offer: Not announced yet
-        status: soon
-
   - id: creator-tools
     emoji: "🎬"
     title: Creator Tools
-    blurb: Tools for blogs, newsletters, courses and tech videos.
+    intro: >-
+      Writing and teaching what you know is one of the best ways to grow as an engineer.
+      A tech blog, a newsletter or a course shows your skills to recruiters and the community,
+      and helps you build an audience. These tools make it easy to start.
     deals:
-      - name: ElevenLabs
-        domain: elevenlabs.io
-        url: https://try.elevenlabs.io/p4fh9dhwbmjw?ref=devopscube.com
-        description: AI voice-over and text-to-speech
-        offer: Up to 50% off
-        status: live
-        hot: true
-      - name: Teachable
-        domain: teachable.com
-        url: https://devopscube.com/recommends/teachable-pricing/
-        description: Create and sell online courses
-        offer: Up to 30% off
-        status: live
-      - name: Ghost
-        domain: ghost.org
-        url: https://ghost.org/?via=bibin75&ref=devopscube.com
-        description: Open-source blogging and newsletter platform
-        offer: Up to 20% off annual plans
-        status: live
       - name: Beehiiv
         domain: beehiiv.com
         url: https://www.beehiiv.com/?via=devopscube&ref=devopscube.com
@@ -314,33 +369,28 @@ categories:
         offer: Up to 20% off
         code: DCUBE20OFF
         status: live
+      - name: Ghost
+        domain: ghost.org
+        url: https://ghost.org/?via=bibin75&ref=devopscube.com
+        description: Open-source blogging and newsletter platform
+        offer: Up to 20% off annual plans
+        status: live
+      - name: Teachable
+        domain: teachable.com
+        url: https://devopscube.com/recommends/teachable-pricing/
+        description: Create and sell online courses
+        offer: Up to 30% off
+        status: live
       - name: TechSmith (Camtasia & Snagit)
         domain: techsmith.com
         url: https://techsmith.z6rjha.net/rP3VB
-        description: Screen recording, video editing and screenshots
+        description: Screen recording and screenshots for tutorials and demos
         offer: Not announced yet
         status: soon
-      - name: invideo
-        domain: invideo.io
-        url: https://invideo.sjv.io/2R9xPz
-        description: AI video generator and editor
-        offer: Not announced yet
-        status: soon
-      - name: Vyond
-        domain: vyond.com
-        url: https://vyond.sjv.io/PyYKRQ
-        description: Animated explainer videos
-        offer: Not announced yet
-        status: soon
-      - name: VideoScribe
-        domain: videoscribe.co
-        url: https://tidd.ly/4rUcGdx
-        description: Whiteboard animation videos
-        offer: Not announced yet
-        status: soon
-      - name: TubeBuddy
-        domain: tubebuddy.com
-        url: https://www.tubebuddy.com/pricing?a=comtechies
-        description: YouTube channel growth and SEO toolkit
-        offer: Not announced yet
-        status: soon
+      - name: ElevenLabs
+        domain: elevenlabs.io
+        url: https://try.elevenlabs.io/p4fh9dhwbmjw?ref=devopscube.com
+        description: AI voice-over for course videos and demos
+        offer: Up to 50% off
+        status: live
+        hot: true

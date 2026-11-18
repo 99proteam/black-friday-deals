@@ -20,11 +20,9 @@ body:
       label: Category
       options:
         - 🎓 Learning Platforms
+        - 📚 Books & Reading
         - 📜 Certifications
         - 🌐 Hosting Platforms
-        - ☁️ Free Cloud Credits
-        - 🧠 Interview Prep & System Design
-        - 📚 Books & Reading
         - 🎬 Creator Tools
         - Other (explain below)
     validations:
