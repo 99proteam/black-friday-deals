@@ -81,9 +81,10 @@ def button(deal: dict) -> str:
 
 def logo(deal: dict, size: int) -> str:
     """Certification logos when set, otherwise the site's favicon."""
+    alt = f'{deal["name"]} logo'
     if deal.get("logos"):
-        return "&nbsp;".join(f'<img src="{p}" height="{size}" alt="">' for p in deal["logos"])
-    return f'<img src="{favicon(deal["domain"], 64)}" width="{size}" height="{size}" alt="">'
+        return "&nbsp;".join(f'<img src="{p}" height="{size}" alt="{alt}">' for p in deal["logos"])
+    return f'<img src="{favicon(deal["domain"], 64)}" width="{size}" height="{size}" alt="{alt}">'
 
 
 def offer_text(deal: dict) -> str:
@@ -92,8 +93,53 @@ def offer_text(deal: dict) -> str:
     text = deal["offer"]
     if len(text) <= 18:  # keep short offers like "40% off" on one line
         text = text.replace(" ", "&nbsp;")
-    text = f"<b>{text}</b>"
-    return f"🔥&nbsp;{text}" if deal.get("hot") else text
+    return f"<b>{text}</b>"
+
+
+def plain_offer(deal: dict) -> str:
+    """Offer as one plain sentence fragment, for FAQ answers."""
+    code = f" with code `{deal['code']}`" if deal.get("code") else ""
+    return f"**{deal['name']}**: {deal['offer']}{code}"
+
+
+def render_faq(data: dict) -> str:
+    """Question-and-answer block built from the deal data.
+
+    Short, direct answers in Q&A form are what search engines and AI answer
+    engines quote, so every answer here is generated and stays in sync.
+    """
+    year = data["year"]
+    bf, cm = fmt_date(data["black_friday"]), fmt_date(data["cyber_monday"])
+    live = [d for d in all_deals(data) if d["status"] == "live"]
+    out = [
+        f"### When is Black Friday {year}?\n",
+        f"Black Friday {year} is on **{bf}** and Cyber Monday {year} is on **{cm}**. "
+        f"Many deals in this tracker are already live before Black Friday and run through Cyber Monday.\n",
+    ]
+    for cat in data["categories"]:
+        cat_live = [d for d in deals_of(cat) if d["status"] == "live"]
+        if not cat_live:
+            continue
+        topic = cat.get("faq_topic", cat["title"].lower())
+        out.append(f"### What are the best {topic} deals for Black Friday {year}?\n")
+        out.extend(f"- {plain_offer(d)}" for d in cat_live[:5])
+        if len(cat_live) > 5:
+            out.append(f"- …and {len(cat_live) - 5} more in [{cat['title']}](#{cat['id']}).")
+        out.append("")
+    coupons = [d for d in live if d.get("code")]
+    if coupons:
+        codes = {}
+        for d in coupons:
+            codes.setdefault(d["code"], d["name"])
+        out.append(f"### Which Black Friday {year} coupon codes work right now?\n")
+        out.extend(f"- `{code}`: {name}" for code, name in codes.items())
+        out.append("")
+    out.append("### How often is this Black Friday tracker updated?\n")
+    out.append(
+        f"We check every deal during the sale and mark it 🟢 Live, ⏳ Soon or ⛔ Expired. "
+        f"Last checked: **{fmt_date(data['last_updated'])}**. {len(live)} of {len(all_deals(data))} deals are live.\n"
+    )
+    return "\n".join(out)
 
 
 # ---------------------------------------------------------------- validation
@@ -230,6 +276,7 @@ BLOCKS = {
     "NAV": render_nav,
     "TOP-PICKS": render_top_picks,
     "DEALS": render_deals,
+    "FAQ": render_faq,
 }
 
 

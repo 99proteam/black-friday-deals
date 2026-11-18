@@ -4,7 +4,6 @@
 #
 # Deals show in the README in the same order as in this file.
 # status:  live | soon | expired
-# hot:     true when the deal is 50% off or more (adds 🔥)
 
 year: 2026
 last_updated: 2026-11-18
@@ -24,6 +23,7 @@ top_picks:
 
 categories:
   - id: learning-platforms
+    faq_topic: DevOps learning platform
     emoji: "🎓"
     title: Learning Platforms
     intro: >-
@@ -38,42 +38,36 @@ categories:
         description: Hands-on DevOps, Kubernetes and cloud courses with in-browser labs
         offer: 50% off
         status: live
-        hot: true
       - name: Udacity
         domain: udacity.com
         url: https://devopscube.com/recommends/udacity-plans/
         description: Nanodegree programs in cloud, AI and data engineering
         offer: Up to 55% off
         status: live
-        hot: true
       - name: ByteByteGo
         domain: bytebytego.com
         url: https://bytebytego.com/?fpr=devopscube&ref=devopscube.com
         description: Visual system design courses and guides for interviews and real work
         offer: 50% off annual plans
         status: live
-        hot: true
       - name: Pluralsight & A Cloud Guru
         domain: pluralsight.com
         url: https://devopscube.com/recommends/pluralsight-free-trial/
         description: Cloud and DevOps skills plus AWS, Azure and GCP certification prep
         offer: 60% off annual plans
         status: live
-        hot: true
       - name: Educative
         domain: educative.io
         url: https://devopscube.com/recommends/educative/
         description: Interactive text-based courses with in-browser coding
         offer: 55% off Unlimited plans
         status: live
-        hot: true
       - name: DataCamp
         domain: datacamp.com
         url: https://devopscube.com/recommends/datacamp-special-promo/
         description: Data, AI and MLOps skills with hands-on projects
         offer: 50% off annual plans
         status: live
-        hot: true
       - name: DevOpsCube Courses
         domain: devopscube.com
         url: https://courses.devopscube.com/?ref=devopscube.com
@@ -125,6 +119,7 @@ categories:
         status: soon
 
   - id: books-reading
+    faq_topic: tech book
     emoji: "📚"
     title: Books & Reading
     intro: >-
@@ -151,6 +146,7 @@ categories:
         status: soon
 
   - id: certifications
+    faq_topic: Kubernetes certification
     emoji: "📜"
     title: Certifications
     intro: >-
@@ -300,6 +296,7 @@ categories:
             status: live
 
   - id: hosting-platforms
+    faq_topic: web hosting
     emoji: "🌐"
     title: Hosting Platforms
     intro: >-
@@ -314,63 +311,54 @@ categories:
         offer: 80% off
         code: BFCM802
         status: live
-        hot: true
       - name: Hostinger
         domain: hostinger.com
         url: https://comtechies.com/recommends/hostinger-2?ref=devopscube.com
         description: Budget-friendly web and WordPress hosting
         offer: Up to 83% off
         status: live
-        hot: true
       - name: Hosting.com (formerly A2 Hosting)
         domain: hosting.com
         url: https://comtechies.com/recommends/httpswwwa2hostingcomaid67af0c96b259cbid75dbf1c0?ref=devopscube.com
         description: Shared, WordPress and managed hosting
         offer: Up to 87% off
         status: live
-        hot: true
       - name: ChemiCloud
         domain: chemicloud.com
         url: https://chemicloud.com/?ref=devopscube.com#68e6451055163
         description: Managed WordPress and shared hosting
         offer: Up to 84% off
         status: live
-        hot: true
       - name: DreamHost
         domain: dreamhost.com
         url: https://click.dreamhost.com/aff_c?offer_id=8&aff_id=21910
         description: Shared, VPS and WordPress hosting
         offer: Up to 83% off
         status: live
-        hot: true
       - name: Scala Hosting
         domain: scalahosting.com
         url: https://www.scalahosting.com/?ref=devopscube.com#jorgearagao
         description: Managed VPS hosting with the SPanel control panel
         offer: Up to 78% off
         status: live
-        hot: true
       - name: InMotion Hosting
         domain: inmotionhosting.com
         url: https://comtechies.com/recommends/httpspartnersinmotionhostingcomc56122972600334222?ref=devopscube.com
         description: Shared, VPS and dedicated hosting
         offer: Up to 77% off
         status: live
-        hot: true
       - name: HostGator
         domain: hostgator.com
         url: https://comtechies.com/recommends/hostgator?ref=devopscube.com
         description: Shared and WordPress hosting
         offer: Up to 76% off
         status: live
-        hot: true
       - name: Bluehost
         domain: bluehost.com
         url: https://comtechies.com/recommends/bluehost?ref=devopscube.com
         description: Shared and WordPress hosting
         offer: Up to 62% off
         status: live
-        hot: true
       - name: Squarespace
         domain: squarespace.com
         url: https://squarespace.syuh.net/9Va5X0
@@ -379,6 +367,7 @@ categories:
         status: soon
 
   - id: creator-tools
+    faq_topic: creator tool
     emoji: "🎬"
     title: Creator Tools
     intro: >-
@@ -417,4 +406,3 @@ categories:
         description: AI voice-over for course videos and demos
         offer: Up to 50% off
         status: live
-        hot: true

@@ -29,7 +29,6 @@ Thanks for helping engineers save money! This list is for deals that are useful 
      code: BF2026                     # optional, leave out if no code is needed
      valid: Ends Dec 2                # optional, deadline or date range
      status: live                     # live | soon | expired
-     hot: true                        # optional, only for 50% off or more
    ```
 
 3. Rebuild the README:
